@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567e0d8ab84252e4894155c37512a494, type: 3}
+  m_Name: impact_view_ice_01
+  m_EditorClassIdentifier: 
+  Name: Impact Ice
+  sprites:
+  - sprite: {fileID: 1056583741, guid: 92872a0b356023e40a27eb467caf44b7, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: -573315610, guid: 92872a0b356023e40a27eb467caf44b7, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: -307664811, guid: 92872a0b356023e40a27eb467caf44b7, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: 1200798944, guid: 92872a0b356023e40a27eb467caf44b7, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: -2030671783, guid: 92872a0b356023e40a27eb467caf44b7, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: 94320973, guid: 92872a0b356023e40a27eb467caf44b7, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  isAnimated: 1
+  sfx:
+    cast: {fileID: 0}
+    loop: {fileID: 0}
+    impact: {fileID: 0}
+  animationSpeed: 9

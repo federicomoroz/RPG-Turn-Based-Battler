@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567e0d8ab84252e4894155c37512a494, type: 3}
+  m_Name: missile_view_ice_01
+  m_EditorClassIdentifier: 
+  Name: Missile View Ice 01
+  sprites:
+  - sprite: {fileID: 950750274, guid: 3b2524050207e4146bcd4fe6503e5bc7, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: -64609725, guid: 3b2524050207e4146bcd4fe6503e5bc7, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: -1290849024, guid: 3b2524050207e4146bcd4fe6503e5bc7, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  isAnimated: 1
+  sfx:
+    cast: {fileID: 8300000, guid: 238c08ff5f6cd6b45800c42e6a706918, type: 3}
+    loop: {fileID: 0}
+    impact: {fileID: 8300000, guid: 6b2a40cfe2f476743b6ff32e19b75f0b, type: 3}
+  animationSpeed: 8

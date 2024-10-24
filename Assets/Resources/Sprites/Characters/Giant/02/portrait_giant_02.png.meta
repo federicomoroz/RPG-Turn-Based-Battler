@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: 25a2f7c1161d73040a0f0376875e7e95
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8378543493671613993
+    second: portrait_giant_02_0
+  - first:
+      213: -8861500977904931330
+    second: portrait_giant_02_1
+  - first:
+      213: -7294808436406318624
+    second: portrait_giant_02_2
+  - first:
+      213: -98493120858482914
+    second: portrait_giant_02_3
+  - first:
+      213: 7062894210176557096
+    second: portrait_giant_02_4
+  - first:
+      213: -3785161236844309109
+    second: portrait_giant_02_5
+  - first:
+      213: 5593822045703807507
+    second: portrait_giant_02_6
+  - first:
+      213: -748165745117342924
+    second: portrait_giant_02_7
+  - first:
+      213: -3319759855842618127
+    second: portrait_giant_02_8
+  - first:
+      213: 829029624920815062
+    second: portrait_giant_02_9
+  - first:
+      213: 7261545366820250558
+    second: portrait_giant_02_10
+  - first:
+      213: 7925014383368058568
+    second: portrait_giant_02_11
+  - first:
+      213: -299031506479376414
+    second: portrait_giant_02_12
+  - first:
+      213: 9038738012807377223
+    second: portrait_giant_02_13
+  - first:
+      213: 7870649094799527417
+    second: portrait_giant_02_14
+  - first:
+      213: 4531437235578516478
+    second: portrait_giant_02_15
+  - first:
+      213: -6842779195980253855
+    second: portrait_giant_02_16
+  - first:
+      213: 1707858005518519784
+    second: portrait_giant_02_17
+  - first:
+      213: 8157400217262650766
+    second: portrait_giant_02_18
+  - first:
+      213: -5267394522927078381
+    second: portrait_giant_02_19
+  - first:
+      213: 4718424334234959212
+    second: portrait_giant_02_20
+  - first:
+      213: 1021804377267902120
+    second: portrait_giant_02_21
+  - first:
+      213: -8857586176872163301
+    second: portrait_giant_02_22
+  - first:
+      213: 5561866582304386427
+    second: portrait_giant_02_23
+  - first:
+      213: 441639993576184864
+    second: portrait_giant_02_24
+  - first:
+      213: 6475196480397582708
+    second: portrait_giant_02_25
+  - first:
+      213: -3093785518750422111
+    second: portrait_giant_02_26
+  - first:
+      213: -4842159999654052842
+    second: portrait_giant_02_27
+  - first:
+      213: -8745134082639441527
+    second: portrait_giant_02_28
+  - first:
+      213: 4891396811546619411
+    second: portrait_giant_02_29
+  - first:
+      213: -1484662714017024022
+    second: portrait_giant_02_30
+  - first:
+      213: 6843207471857568627
+    second: portrait_giant_02_31
+  - first:
+      213: -881351642270525648
+    second: portrait_giant_02_32
+  - first:
+      213: 9174035991276780370
+    second: portrait_giant_02_33
+  - first:
+      213: -8784696239731580729
+    second: portrait_giant_02_34
+  - first:
+      213: 8173160730660349482
+    second: portrait_giant_02_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: portrait_giant_02_0
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1020
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926f4738ae0964470800000000000000
+      internalID: 8378543493671613993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 387233d1696366f45ad0e14de6d51e75
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      portrait_giant_02_1: 1361255501
+      portrait_giant_02_36: -1223759363
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

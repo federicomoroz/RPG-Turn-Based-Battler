@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182167a899236f942a3e47ce0efcda2b, type: 3}
+  m_Name: missile_data_fire_01
+  m_EditorClassIdentifier: 
+  destructionCondition: 0
+  movementData:
+    _rotate: 1
+    _speed: 8
+    _movementType: 0
+    _trajectoryCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    _trajectoryLength: 0
+  lifeTime: 0
+  viewData: {fileID: 11400000, guid: 1c1140796e7684a4eb7eb621754edf38, type: 2}
+  impact: {fileID: 11400000, guid: 45af236c52281424c87f3fde0cbe25ec, type: 2}

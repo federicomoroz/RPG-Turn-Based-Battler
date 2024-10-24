@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e613ef7ab5a1f0c44bf7b384232d90d6, type: 3}
+  m_Name: Motions_Wizard
+  m_EditorClassIdentifier: 
+  Idle: {fileID: 7400000, guid: 3b2f060e9e8671448926e9065728d31b, type: 2}
+  DashStart: {fileID: 7400000, guid: b6e42ff217d3888409a1c1aed0551085, type: 2}
+  DashLoop: {fileID: 7400000, guid: d5c0bd19651eb1742bcbc570fdd0516f, type: 2}
+  DashEnd: {fileID: 7400000, guid: 8b3894b29839ca6459448e7d73e01396, type: 2}
+  Melee: {fileID: 7400000, guid: 33efe9d3ca52fdc4a9a4222a820c84b7, type: 2}
+  Range: {fileID: 7400000, guid: 841c1d6adfeec0d48911aff104c10b62, type: 2}
+  Damage: {fileID: 7400000, guid: c31d1adb9ba79174eb42d47cda60d7c0, type: 2}

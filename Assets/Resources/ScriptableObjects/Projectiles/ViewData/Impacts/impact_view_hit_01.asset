@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567e0d8ab84252e4894155c37512a494, type: 3}
+  m_Name: impact_view_hit_01
+  m_EditorClassIdentifier: 
+  Name: Impact Hit View
+  sprites:
+  - sprite: {fileID: -1033656121, guid: b8fb3aff70fcb404fb46755818dfb2f6, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: -643364076, guid: b8fb3aff70fcb404fb46755818dfb2f6, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: 764934763, guid: b8fb3aff70fcb404fb46755818dfb2f6, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: -129184866, guid: b8fb3aff70fcb404fb46755818dfb2f6, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: 1048015170, guid: b8fb3aff70fcb404fb46755818dfb2f6, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  isAnimated: 1
+  sfx:
+    cast: {fileID: 8300000, guid: e8df7f719be042946b8ac707c0b8fbc6, type: 3}
+    loop: {fileID: 0}
+    impact: {fileID: 0}
+  animationSpeed: 9

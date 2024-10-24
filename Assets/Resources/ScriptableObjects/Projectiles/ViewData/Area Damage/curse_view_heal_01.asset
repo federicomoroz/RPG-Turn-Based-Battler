@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1529fba750ba1ce4b9c675392ca950f9, type: 3}
+  m_Name: curse_view_heal_01
+  m_EditorClassIdentifier: 
+  Name: Fire Area Damage 02
+  sprites:
+  - {fileID: -261996, guid: 19faa2377e3457346b36eb019b5ba3ae, type: 3}
+  - {fileID: -1549080205, guid: 19faa2377e3457346b36eb019b5ba3ae, type: 3}
+  - {fileID: 1921704920, guid: 19faa2377e3457346b36eb019b5ba3ae, type: 3}
+  - {fileID: -1810367309, guid: 19faa2377e3457346b36eb019b5ba3ae, type: 3}
+  - {fileID: 1643944050, guid: 19faa2377e3457346b36eb019b5ba3ae, type: 3}
+  - {fileID: 293902427, guid: 19faa2377e3457346b36eb019b5ba3ae, type: 3}
+  isAnimated: 1
+  sfx:
+  - {fileID: 8300000, guid: 2d9c7491e38fd5d42b8fd2ccce97eed0, type: 3}
+  animationSpeed: 6

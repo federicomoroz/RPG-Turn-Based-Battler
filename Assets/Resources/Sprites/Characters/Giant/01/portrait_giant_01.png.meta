@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 248bf9d83a767604182f3eee9186fd68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7675738199560025176
+    second: portrait_giant_01_0
+  - first:
+      213: 5743536205755095401
+    second: portrait_giant_01_1
+  - first:
+      213: -8151121504223930692
+    second: portrait_giant_01_2
+  - first:
+      213: -4162497583854977004
+    second: portrait_giant_01_3
+  - first:
+      213: -8768838032190908534
+    second: portrait_giant_01_4
+  - first:
+      213: 4923522422742320381
+    second: portrait_giant_01_5
+  - first:
+      213: -691655649287014671
+    second: portrait_giant_01_6
+  - first:
+      213: -394004671765515136
+    second: portrait_giant_01_7
+  - first:
+      213: -5727499505120472280
+    second: portrait_giant_01_8
+  - first:
+      213: -3127195473666301667
+    second: portrait_giant_01_9
+  - first:
+      213: -1168659099853997740
+    second: portrait_giant_01_10
+  - first:
+      213: 9037047493139118600
+    second: portrait_giant_01_11
+  - first:
+      213: 1690485883117560075
+    second: portrait_giant_01_12
+  - first:
+      213: 3434607702412254056
+    second: portrait_giant_01_13
+  - first:
+      213: 3509635347563746459
+    second: portrait_giant_01_14
+  - first:
+      213: 8541996259592808588
+    second: portrait_giant_01_15
+  - first:
+      213: -8493011973673277079
+    second: portrait_giant_01_16
+  - first:
+      213: 204280268290568335
+    second: portrait_giant_01_17
+  - first:
+      213: -19357165314481120
+    second: portrait_giant_01_18
+  - first:
+      213: 2668485687485806651
+    second: portrait_giant_01_19
+  - first:
+      213: -7973345676004940707
+    second: portrait_giant_01_20
+  - first:
+      213: 6494655246553828635
+    second: portrait_giant_01_21
+  - first:
+      213: 9117383637426936155
+    second: portrait_giant_01_22
+  - first:
+      213: 7980145571513277983
+    second: portrait_giant_01_23
+  - first:
+      213: -9150682778222107884
+    second: portrait_giant_01_24
+  - first:
+      213: -2172207786238073704
+    second: portrait_giant_01_25
+  - first:
+      213: -5719741661521785622
+    second: portrait_giant_01_26
+  - first:
+      213: -2627215884330741415
+    second: portrait_giant_01_27
+  - first:
+      213: 6635903213145676068
+    second: portrait_giant_01_28
+  - first:
+      213: 5673546365432056602
+    second: portrait_giant_01_29
+  - first:
+      213: 1279046204711349038
+    second: portrait_giant_01_30
+  - first:
+      213: 6548320626662576910
+    second: portrait_giant_01_31
+  - first:
+      213: 7125153909886031536
+    second: portrait_giant_01_32
+  - first:
+      213: -6949927214246849169
+    second: portrait_giant_01_33
+  - first:
+      213: 6220540683222839452
+    second: portrait_giant_01_34
+  - first:
+      213: 4945162789533558149
+    second: portrait_giant_01_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: portrait_giant_01_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 958
+        width: 267
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854fba58933b58a60800000000000000
+      internalID: 7675738199560025176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_1
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 958
+        width: 268
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96990a2afb325bf40800000000000000
+      internalID: 5743536205755095401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_2
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 958
+        width: 268
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb65fabad2661ee80800000000000000
+      internalID: -8151121504223930692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_3
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 958
+        width: 268
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41007e75086db36c0800000000000000
+      internalID: -4162497583854977004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_4
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 958
+        width: 267
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87535ed444de4680800000000000000
+      internalID: -8768838032190908534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_5
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 958
+        width: 267
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df40a3bbe8dd35440800000000000000
+      internalID: 4923522422742320381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_6
+      rect:
+        serializedVersion: 2
+        x: 2333
+        y: 958
+        width: 267
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6fa5df9deb666f0800000000000000
+      internalID: -691655649287014671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_7
+      rect:
+        serializedVersion: 2
+        x: 2743
+        y: 958
+        width: 233
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084729ba6d6388af0800000000000000
+      internalID: -394004671765515136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_8
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 640
+        width: 239
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8239112bb85d380b0800000000000000
+      internalID: -5727499505120472280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_9
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 640
+        width: 239
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1129e80948f994d0800000000000000
+      internalID: -3127195473666301667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_10
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 639
+        width: 293
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459bca19db618cfe0800000000000000
+      internalID: -1168659099853997740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_11
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 639
+        width: 295
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a34ee80da0a6d70800000000000000
+      internalID: 9037047493139118600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_12
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 639
+        width: 297
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01e80144ffc57710800000000000000
+      internalID: 1690485883117560075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_13
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 639
+        width: 296
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b5a1d028d2aaf20800000000000000
+      internalID: 3434607702412254056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_14
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 641
+        width: 304
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9411b6f0cab4b030800000000000000
+      internalID: 3509635347563746459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_15
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 641
+        width: 302
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88aeb537544b8670800000000000000
+      internalID: 8541996259592808588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_16
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 383
+        width: 252
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969a01c9b92c22a80800000000000000
+      internalID: -8493011973673277079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_17
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 385
+        width: 250
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80b41a52dfb5d200800000000000000
+      internalID: 204280268290568335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_18
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 387
+        width: 262
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024629db2ca3bbff0800000000000000
+      internalID: -19357165314481120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_19
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 391
+        width: 234
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b383ec2389d580520800000000000000
+      internalID: 2668485687485806651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_20
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 605
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54245e2a5cf85190800000000000000
+      internalID: -7973345676004940707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_21
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 370
+        width: 240
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1dc77d5986a12a50800000000000000
+      internalID: 6494655246553828635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_22
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 555
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b599acdbc14778e70800000000000000
+      internalID: 9117383637426936155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_23
+      rect:
+        serializedVersion: 2
+        x: 2397
+        y: 320
+        width: 236
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e94fddd1c2fbe60800000000000000
+      internalID: 7980145571513277983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_24
+      rect:
+        serializedVersion: 2
+        x: 2791
+        y: 320
+        width: 227
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41369cfde7e320180800000000000000
+      internalID: -9150682778222107884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 323
+        width: 301
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89421faf684cad1e0800000000000000
+      internalID: -2172207786238073704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_26
+      rect:
+        serializedVersion: 2
+        x: 2378
+        y: 318
+        width: 127
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeccdf963456f90b0800000000000000
+      internalID: -5719741661521785622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_27
+      rect:
+        serializedVersion: 2
+        x: 2587
+        y: 338
+        width: 77
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951d332a2114a8bd0800000000000000
+      internalID: -2627215884330741415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2
+        width: 228
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429db6750d6771c50800000000000000
+      internalID: 6635903213145676068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_29
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 2
+        width: 224
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b49401c5c7cbe40800000000000000
+      internalID: 5673546365432056602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_30
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 4
+        width: 223
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ba12b1fb510c110800000000000000
+      internalID: 1279046204711349038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_31
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 8
+        width: 213
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03169b5aee40ea50800000000000000
+      internalID: 6548320626662576910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_32
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 5
+        width: 232
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b61eb8fab1a1e260800000000000000
+      internalID: 7125153909886031536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_33
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 8
+        width: 231
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f651ffb5506ec8f90800000000000000
+      internalID: -6949927214246849169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_34
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 9
+        width: 232
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90fc562bccc35650800000000000000
+      internalID: 6220540683222839452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portrait_giant_01_35
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 11
+        width: 233
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585a0a24b5fb0a440800000000000000
+      internalID: 4945162789533558149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      portrait_giant_01_0: 7675738199560025176
+      portrait_giant_01_1: 5743536205755095401
+      portrait_giant_01_10: -1168659099853997740
+      portrait_giant_01_11: 9037047493139118600
+      portrait_giant_01_12: 1690485883117560075
+      portrait_giant_01_13: 3434607702412254056
+      portrait_giant_01_14: 3509635347563746459
+      portrait_giant_01_15: 8541996259592808588
+      portrait_giant_01_16: -8493011973673277079
+      portrait_giant_01_17: 204280268290568335
+      portrait_giant_01_18: -19357165314481120
+      portrait_giant_01_19: 2668485687485806651
+      portrait_giant_01_2: -8151121504223930692
+      portrait_giant_01_20: -7973345676004940707
+      portrait_giant_01_21: 6494655246553828635
+      portrait_giant_01_22: 9117383637426936155
+      portrait_giant_01_23: 7980145571513277983
+      portrait_giant_01_24: -9150682778222107884
+      portrait_giant_01_25: -2172207786238073704
+      portrait_giant_01_26: -5719741661521785622
+      portrait_giant_01_27: -2627215884330741415
+      portrait_giant_01_28: 6635903213145676068
+      portrait_giant_01_29: 5673546365432056602
+      portrait_giant_01_3: -4162497583854977004
+      portrait_giant_01_30: 1279046204711349038
+      portrait_giant_01_31: 6548320626662576910
+      portrait_giant_01_32: 7125153909886031536
+      portrait_giant_01_33: -6949927214246849169
+      portrait_giant_01_34: 6220540683222839452
+      portrait_giant_01_35: 4945162789533558149
+      portrait_giant_01_4: -8768838032190908534
+      portrait_giant_01_5: 4923522422742320381
+      portrait_giant_01_6: -691655649287014671
+      portrait_giant_01_7: -394004671765515136
+      portrait_giant_01_8: -5727499505120472280
+      portrait_giant_01_9: -3127195473666301667
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567e0d8ab84252e4894155c37512a494, type: 3}
+  m_Name: missile_view_fire_01
+  m_EditorClassIdentifier: 
+  Name: Missile Fire 01
+  sprites:
+  - sprite: {fileID: -1004747940, guid: e741b02919bdd6044a86f616e6b51cb7, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: -1318799554, guid: e741b02919bdd6044a86f616e6b51cb7, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: 540842210, guid: e741b02919bdd6044a86f616e6b51cb7, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  isAnimated: 1
+  sfx:
+    cast: {fileID: 8300000, guid: 2d9c7491e38fd5d42b8fd2ccce97eed0, type: 3}
+    loop: {fileID: 0}
+    impact: {fileID: 8300000, guid: 47796a84d51db3a49a4d3dab901636a0, type: 3}
+  animationSpeed: 8

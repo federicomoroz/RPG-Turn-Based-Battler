@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567e0d8ab84252e4894155c37512a494, type: 3}
+  m_Name: impact_view_fire_01
+  m_EditorClassIdentifier: 
+  Name: Impact Fire
+  sprites:
+  - sprite: {fileID: -1050757160, guid: 327b2ac073f134f4eb3fa2ebbeb69746, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: -1952183854, guid: 327b2ac073f134f4eb3fa2ebbeb69746, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: 1210827419, guid: 327b2ac073f134f4eb3fa2ebbeb69746, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: -1679211377, guid: 327b2ac073f134f4eb3fa2ebbeb69746, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: 41127264, guid: 327b2ac073f134f4eb3fa2ebbeb69746, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  - sprite: {fileID: 1008434809, guid: 327b2ac073f134f4eb3fa2ebbeb69746, type: 3}
+    playSfx: 0
+    sfx: {fileID: 0}
+    volume: 0
+  isAnimated: 1
+  sfx:
+    cast: {fileID: 0}
+    loop: {fileID: 0}
+    impact: {fileID: 0}
+  animationSpeed: 8
