@@ -13,13 +13,16 @@ MonoBehaviour:
   m_Name: Motions_Archer
   m_EditorClassIdentifier: 
   Idle: {fileID: 7400000, guid: f7826620eac65614abab304cb164282f, type: 2}
-  Melee: {fileID: 0}
-  Range: {fileID: 7400000, guid: 24d8f10b50425fe4787dcf01bc1044b7, type: 2}
+  Melee1: {fileID: 0}
+  Melee2: {fileID: 0}
+  Range1: {fileID: 7400000, guid: 24d8f10b50425fe4787dcf01bc1044b7, type: 2}
   Range2: {fileID: 7400000, guid: 0d91ad707ad7029408886124c04c8f9b, type: 2}
   Damage: {fileID: 7400000, guid: f5bbf8e7390c9ff49be2ccd808231485, type: 2}
-  DashStart: {fileID: 0}
-  DashLoop: {fileID: 0}
-  DashEnd: {fileID: 0}
-  JumpStart: {fileID: 0}
-  JumpLoop: {fileID: 0}
-  JumpEnd: {fileID: 0}
+  Jump:
+    Start: {fileID: 0}
+    Loop: {fileID: 0}
+    End: {fileID: 0}
+  Dash:
+    Start: {fileID: 0}
+    Loop: {fileID: 0}
+    End: {fileID: 0}

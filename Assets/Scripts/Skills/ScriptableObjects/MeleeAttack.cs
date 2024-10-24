@@ -25,7 +25,12 @@ namespace Skills
         public override IEnumerator Execute(BattleUnit user, BattleUnit target, System.Action completeCallback)
         {   
             yield return user.Data.MovementType          
-                .Execute(user, target.unitBase.attackerBase.position);           
+                .Execute(user,
+                new Vector3(
+                    target.unitBase.attackerBase.position.x,
+                    target.unitBase.attackerBase.position.y - 0.1f,
+                    0
+                    ));           
 
             yield return PerformAttack(user, target);
 
@@ -33,7 +38,7 @@ namespace Skills
                 .Execute(user, user.unitBase.transform.position);
 
             completeCallback?.Invoke();
-            user.ChangeAnimationState(user.Data.Motions.Idle);
+            user.ChangeAnimationState(user.Data.Motions.Idle);            
 
             yield break;
         }
@@ -47,12 +52,19 @@ namespace Skills
         #region Helpers
         private IEnumerator PerformAttack(BattleUnit user, BattleUnit target)
         {
+            Debug.Log($"{user} perform {this.Name}");
             hitPosition = new Vector3(target.transform.position.x, target.transform.position.y + 1, 0);
             //view        
-            user.ChangeAnimationState(user.Data.Motions.Melee);
+
+            AnimationClip animation = user.Data.Motions.Melee1;
+            
+            if(animationVariant > 1)
+                animation = user.Data.Motions.Melee2;         
+
+            user.ChangeAnimationState(animation);
         
             //evento de feedback visual y audio
-            while (!user.IsAnimationFinished(user.Data.Motions.Melee.name))
+            while (!user.IsAnimationFinished(animation.name))
                 yield return null;
             hitPosition = Vector3.zero;
         }

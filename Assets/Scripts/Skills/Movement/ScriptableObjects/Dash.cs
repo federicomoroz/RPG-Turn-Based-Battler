@@ -16,12 +16,12 @@ namespace Skills
         #region Commands
         public override IEnumerator Execute(BattleUnit user, Vector3 target)
         {
-            user.ChangeAnimationState(user.Data.Motions.DashStart);    
+            user.ChangeAnimationState(user.Data.Motions.Dash.Start);    
         
-            while(!user.IsAnimationFinished(user.Data.Motions.DashStart.name))
+            while(!user.IsAnimationFinished(user.Data.Motions.Dash.Start.name))
                 yield return null;
 
-            user.ChangeAnimationState(user.Data.Motions.DashLoop);
+            user.ChangeAnimationState(user.Data.Motions.Dash.Loop);
             SoundManager.PlaySound(sfxCast);
 
             _movement.Execute(
@@ -31,12 +31,12 @@ namespace Skills
                 false, 
                 () => 
                 {
-                    user.ChangeAnimationState(user.Data.Motions.DashEnd);
+                    user.ChangeAnimationState(user.Data.Motions.Dash.End);
                     OnComplete?.Invoke(); 
                 }
                 );
  
-            while (!user.IsAnimationFinished(user.Data.Motions.DashEnd.name))
+            while (!user.IsAnimationFinished(user.Data.Motions.Dash.End.name))
                 yield return null;   
         }
         #endregion

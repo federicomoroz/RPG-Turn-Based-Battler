@@ -20,6 +20,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: ffee98d4b4bc8634c8086d7a2d47a011, type: 2}
     - {fileID: 11400000, guid: 54cefbd3038cc2044aad162772f6f6ea, type: 2}
     - {fileID: 11400000, guid: 46ab30d33ea63f748b69c3e8d7147207, type: 2}
+    defend: {fileID: 0}
   _stats: {fileID: 11400000, guid: 284c45ddef0e03749b96545e67772e21, type: 2}
   _motions: {fileID: 11400000, guid: ebe4de1f626d8b5458d3a79b170a62f2, type: 2}
   _spritesVariants:

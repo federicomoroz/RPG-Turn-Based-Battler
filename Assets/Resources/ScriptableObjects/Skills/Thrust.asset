@@ -32,7 +32,7 @@ MonoBehaviour:
     variance: 10
     element: {fileID: 0}
   priority: 2
-  DoMovement: 0
-  animationName: Melee
+  DoMovement: 1
+  animationVariant: 0
   sfx: {fileID: 8300000, guid: 4dbdd5d1d277dc3488c618b6b411dc07, type: 3}
   impact: {fileID: 11400000, guid: 72b4188a74a7bfe4da45eeadfa6d9354, type: 2}

@@ -14,7 +14,7 @@ namespace Projectiles
         #endregion
         #region Dependencies
         public SO_ObjectView viewData;
-        public SO_Projectile impact;
+        public SO_Projectile[] impacts;
         #endregion
     }
 }

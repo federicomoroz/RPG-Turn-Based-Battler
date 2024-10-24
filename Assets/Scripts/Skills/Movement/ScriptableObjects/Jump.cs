@@ -17,19 +17,20 @@ namespace Skills
         #region Commands
         public override IEnumerator Execute(BattleUnit user, Vector3 target)
         {
+            var animation = user.Data.Motions.Jump;
             _movement.SetCurve(_curve);
 
             //Anticipation
-            user.ChangeAnimationState(user.Data.Motions.JumpStart);
+            user.ChangeAnimationState(animation.Start);
 
-            while (!user.IsAnimationFinished(user.Data.Motions.JumpStart.name))       
+            while (!user.IsAnimationFinished(animation.Start.name))       
                 yield return null;                              
         
             if(sfxCast != null) 
                 SoundManager.PlaySound(sfxCast);
 
             //Jump
-             user.ChangeAnimationState(user.Data.Motions.JumpLoop);
+             user.ChangeAnimationState(animation.Loop);
 
             _movement.Execute(
                 user.transform,
@@ -41,12 +42,12 @@ namespace Skills
                     if(_sfxEnd != null)
                         SoundManager.PlaySound(_sfxEnd);
 
-                    user.ChangeAnimationState(user.Data.Motions.JumpEnd); 
+                    user.ChangeAnimationState(animation.End); 
                 }
                 );
 
             //Land
-            while (!user.IsAnimationFinished(user.Data.Motions.JumpEnd.name))
+            while (!user.IsAnimationFinished(animation.End.name))
                 yield return null;
         }
         #endregion

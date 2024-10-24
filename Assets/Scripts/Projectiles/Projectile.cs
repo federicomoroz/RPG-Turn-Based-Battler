@@ -98,29 +98,31 @@ namespace Projectiles
                 .SetData(_data.movementData)
                 .Execute(
                 _data.movementData.movementType,
-                () =>
-                {
-                    _view.Stop();
-                    CheckImpactSpawn();
-                    Dispose();
-                }
+                OnImpactHandler
                 );
         }
         #endregion
         #region Helpers / Utils
+        private void OnImpactHandler()
+        {
+            _view.Stop();
+            CheckImpactSpawn();
+            Dispose();
+        }
         private void CheckImpactSpawn()
         {
             if(_data == null ) return;
-            if(_data.impact == null) return;
-        
-            var projectile = Factory.CreateProjectile(_data.impact)
-                .SetPosition(transform.position)
-                .SetCompleteCallback(ref onComplete);
+            if(_data.impacts == null) return;
+            foreach (var impact in _data.impacts)
+            {
+                var projectile = Factory.CreateProjectile(impact)
+                    .SetPosition(transform.position)
+                    .SetCompleteCallback(ref onComplete);
 
-            onComplete = null;     
-            projectile.Execute();        
+                onComplete = null;     
+                projectile.Execute();        
+            }        
         }
-
         #endregion
         #region Lifecycle
         public Projectile Initialize()

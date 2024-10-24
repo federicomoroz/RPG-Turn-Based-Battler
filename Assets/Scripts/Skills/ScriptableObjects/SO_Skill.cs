@@ -20,8 +20,9 @@ namespace Skills
         public Message message = new Message();
         public Affect affect = new Affect();
         public Priority priority;
-        public bool DoMovement;    
-        public string animationName;
+        public bool DoMovement;
+        [Range(1,2)]
+        public ushort animationVariant;
 
         #endregion
         #region Commands

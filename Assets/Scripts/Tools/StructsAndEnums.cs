@@ -27,6 +27,15 @@ namespace Sprites
         [Range(0,1)]
         public float volume;
     }
+
+    [System.Serializable]
+    public struct PhasedAnimation
+    {
+        public AnimationClip 
+            Start, 
+            Loop, 
+            End;
+    }
 }
 namespace Sound
 {

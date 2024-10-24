@@ -26,4 +26,5 @@ MonoBehaviour:
     _trajectoryLength: 0
   lifeTime: 0
   viewData: {fileID: 11400000, guid: 1c1140796e7684a4eb7eb621754edf38, type: 2}
-  impact: {fileID: 11400000, guid: 45af236c52281424c87f3fde0cbe25ec, type: 2}
+  impacts:
+  - {fileID: 11400000, guid: 45af236c52281424c87f3fde0cbe25ec, type: 2}

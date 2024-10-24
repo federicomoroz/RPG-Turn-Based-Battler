@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e613ef7ab5a1f0c44bf7b384232d90d6, type: 3}
+  m_Name: Motions_Paladin
+  m_EditorClassIdentifier: 
+  Idle: {fileID: 7400000, guid: ec06377b25c621c469f11db25fd20ec6, type: 2}
+  Melee1: {fileID: 7400000, guid: 2575760fbce33e640a9c6a8796f21c59, type: 2}
+  Melee2: {fileID: 7400000, guid: 9af45e641f775b2409a135a639feeb92, type: 2}
+  Range1: {fileID: 0}
+  Range2: {fileID: 0}
+  Damage: {fileID: 7400000, guid: f8d8080924bbbff4f88a7663ac79d114, type: 2}
+  Jump:
+    Start: {fileID: 0}
+    Loop: {fileID: 0}
+    End: {fileID: 0}
+  Dash:
+    Start: {fileID: 7400000, guid: 532a0044d1a34394ca20506cdf96fb02, type: 2}
+    Loop: {fileID: 7400000, guid: 17d696c2dd624bd42a475581d1385448, type: 2}
+    End: {fileID: 7400000, guid: e09cd0bc52f3d374bb9c7201abe94025, type: 2}

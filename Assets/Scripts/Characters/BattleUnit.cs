@@ -39,15 +39,17 @@ namespace BattleUnits
             Dictionary<string, AnimationClip> motionMap = new Dictionary<string, AnimationClip>
             {
                 { "Idle", _data.Motions.Idle },
-                { "Melee", _data.Motions.Melee },
-                { "Range", _data.Motions.Range },
+                { "Melee1", _data.Motions.Melee1 },
+                { "Melee2", _data.Motions.Melee2 },
+                { "Range1", _data.Motions.Range1 },
+                { "Range2", _data.Motions.Range2 },
                 { "Damage", _data.Motions.Damage },
-                { "DashStart", _data.Motions.DashStart },
-                { "DashLoop", _data.Motions.DashLoop },
-                { "DashEnd", _data.Motions.DashEnd },
-                { "JumpStart", _data.Motions.JumpStart },
-                { "JumpLoop", _data.Motions.JumpLoop },
-                { "JumpEnd", _data.Motions.JumpEnd }
+                { "DashStart", _data.Motions.Dash.Start },
+                { "DashLoop", _data.Motions.Dash.Loop },
+                { "DashEnd", _data.Motions.Dash.End },
+                { "JumpStart", _data.Motions.Jump.Start },
+                { "JumpLoop", _data.Motions.Jump.Loop },
+                { "JumpEnd", _data.Motions.Jump.End }
             };
 
             foreach (var state in motionMap)
@@ -60,7 +62,7 @@ namespace BattleUnits
 
             _animator.runtimeAnimatorController = animatorOverride;
         }
-        public void ChangeAnimationState(AnimationClip animation) => Animator.Play(animation.name);   
+        public void ChangeAnimationState(AnimationClip animation) { Animator.Play(animation.name); }
         public bool IsAnimationFinished(string animationName)
         {
             AnimatorStateInfo stateInfo = Animator.GetCurrentAnimatorStateInfo(0);
@@ -85,6 +87,12 @@ namespace BattleUnits
         #region Lifecycle
         private void Awake()
         {
+            if(_data == null)
+            {
+                Debug.LogWarning($"BattleUnitData missing");
+                return;
+            }
+
             Data = Instantiate(_data);
             _animator = GetComponent<Animator>();
             _sr = GetComponent<SpriteRenderer>();

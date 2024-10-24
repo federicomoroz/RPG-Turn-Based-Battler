@@ -1,21 +1,21 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Sprites;
 
-[CreateAssetMenu(fileName = "NewUnitMotions", menuName = "Data/Unit Motions")]
+[CreateAssetMenu(fileName = "newUnitMotionsData", menuName = "Data/Unit Data/Motions Data")]
 public class SO_UnitMotions : ScriptableObject
 {
-    public AnimationClip 
+    public AnimationClip
         Idle,
-        Melee,
-        Range,
+        Melee1,
+        Melee2,
+        Range1,
         Range2,
-        Damage,
-        DashStart,
-        DashLoop,
-        DashEnd,
-        JumpStart,
-        JumpLoop,
-        JumpEnd;
+        Damage;
+
+    public PhasedAnimation
+         Jump,
+         Dash;
 
     private Dictionary<string, AnimationClip> animationDictionary;
 
@@ -25,16 +25,17 @@ public class SO_UnitMotions : ScriptableObject
         animationDictionary = new Dictionary<string, AnimationClip>
         {
             { "Idle", Idle },
-            { "Melee", Melee },
-            { "Range", Range },
+            { "Melee1", Melee1 },
+            { "Melee2", Melee2 },
+            { "Range1", Range1 },
             { "Range2", Range2 },
             { "Damage", Damage },
-            { "DashStart", DashStart },
-            { "DashLoop", DashLoop },
-            { "DashEnd", DashEnd },
-            { "JumpStart", JumpStart },
-            { "JumpLoop", JumpLoop },
-            { "JumpEnd", JumpEnd }
+            { "DashStart", Dash.Start },
+            { "DashLoop", Dash.Loop },
+            { "DashEnd", Dash.End },
+            { "JumpStart", Jump.Start },
+            { "JumpLoop", Jump.Loop },
+            { "JumpEnd", Jump.End }
         };
     }
 

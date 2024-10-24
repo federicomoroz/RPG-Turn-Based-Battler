@@ -1,0 +1,516 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.23f1 (1c4764c07fb4) revision 1853284'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16295 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+D:/Proyectos/RPG Turn-Based Battler/RPG-Turn-Based-Battler
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+3861
+-job-worker-count
+7
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: D:/Proyectos/RPG Turn-Based Battler/RPG-Turn-Based-Battler
+D:/Proyectos/RPG Turn-Based Battler/RPG-Turn-Based-Battler
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23412]  Target information:
+
+Player connection [23412]  * "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 4291476102 [EditorId] 4291476102 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6HK6DIC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [23412] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [23412] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 2.24 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.23f1 (1c4764c07fb4)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Proyectos/RPG Turn-Based Battler/RPG-Turn-Based-Battler/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2182)
+    Vendor:   NVIDIA
+    VRAM:     5966 MB
+    Driver:   32.0.15.6590
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.003843 seconds.
+- Loaded All Assemblies, in  0.360 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.292 seconds
+Domain Reload Profiling: 650ms
+	BeginReloadAssembly (119ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (143ms)
+		LoadAssemblies (116ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (139ms)
+				TypeCache.ScanAssembly (127ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (293ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (251ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (157ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.042 seconds
+Refreshing native plugins compatible for Editor in 1.43 ms, found 4 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+The project currently uses the compatibility mode where the Render Graph API is disabled. Support for this mode will be removed in future Unity versions. Migrate existing ScriptableRenderPasses to the new RenderGraph API. After the migration, disable the compatibility mode in Edit > Projects Settings > Graphics > Render Graph.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs:427)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 427)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.809 seconds
+Domain Reload Profiling: 1847ms
+	BeginReloadAssembly (414ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (538ms)
+		LoadAssemblies (356ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (280ms)
+			TypeCache.Refresh (180ms)
+				TypeCache.ScanAssembly (164ms)
+			BuildScriptInfoCaches (86ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (809ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (585ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (396ms)
+			ProcessInitializeOnLoadMethodAttributes (107ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.41 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 259 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6456 unused Assets / (6.2 MB). Loaded Objects now: 7263.
+Memory consumption went from 222.4 MB to 216.2 MB.
+Total: 8.377000 ms (FindLiveObjects: 0.724600 ms CreateObjectMapping: 0.982700 ms MarkObjects: 4.301100 ms  DeleteObjects: 2.368100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 470043.010160 seconds.
+  path: Assets/Sprites/rpg-battle-system/mockup2.png
+  artifactKey: Guid(caddb156b94d29846b10a44be3c84e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/rpg-battle-system/mockup2.png using Guid(caddb156b94d29846b10a44be3c84e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7aa6ecea9c3b9d018920ef4f8298f5ac') in 0.097994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.338355 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/1.png
+  artifactKey: Guid(8f6d373c3e2a70346924e1837f04c3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/1.png using Guid(8f6d373c3e2a70346924e1837f04c3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '688f31ab4d9fcc41c92c0a0d8517edb3') in 0.0131121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.042090 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/2.png
+  artifactKey: Guid(9eadc951f02aa1d48a829c13298bea27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/2.png using Guid(9eadc951f02aa1d48a829c13298bea27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b251839da0f8f9c4ec860566716b0bcd') in 0.0129045 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030128 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/4.gif
+  artifactKey: Guid(53d893ec26e8bf3429a3089882024236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/4.gif using Guid(53d893ec26e8bf3429a3089882024236) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fb482d6ab807ea4ebe5b04ae5930d9f7') in 0.0150451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020851 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/6.gif
+  artifactKey: Guid(afd9820736d99254dab44c52ed3e694d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/6.gif using Guid(afd9820736d99254dab44c52ed3e694d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d8bb863bfb8cbedc4ce299207d5dd9b') in 0.0130238 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003225 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/7.png
+  artifactKey: Guid(290465958a7e88344ac2d34c9032195b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/7.png using Guid(290465958a7e88344ac2d34c9032195b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4d09bd34c8f64e5106daf2079851906') in 0.0122415 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003225 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/9.gif
+  artifactKey: Guid(795b433065261074e8d29c1e4e54d5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/9.gif using Guid(795b433065261074e8d29c1e4e54d5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '23444e196a049f37c40daf9805815db9') in 0.0131685 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034392 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/10.png
+  artifactKey: Guid(dd9e2925777cfed47914a7589b2c02cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/10.png using Guid(dd9e2925777cfed47914a7589b2c02cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '605c0f4eee0554bffb1f8c196feef538') in 0.0122969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018321 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/11.png
+  artifactKey: Guid(cf8b5bb520ee25e49ae7ce1718e5c8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/11.png using Guid(cf8b5bb520ee25e49ae7ce1718e5c8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '210e5d10b4d6f9d0f3c72e271b5d489a') in 0.0127075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056557 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/13.gif
+  artifactKey: Guid(c20dbac4901906a4097379b01f2ad563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/13.gif using Guid(c20dbac4901906a4097379b01f2ad563) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbc77131c71c76b03c4512ab344234ce') in 0.013666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/14.gif
+  artifactKey: Guid(48889164b5c2ad841b54bc3b1ceffbc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/14.gif using Guid(48889164b5c2ad841b54bc3b1ceffbc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b76aa31a042e369b4106acbf2a74856') in 0.0069393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016980 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/15.gif
+  artifactKey: Guid(2b25bc8763b9823498fb5fc4a3ebe1c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/15.gif using Guid(2b25bc8763b9823498fb5fc4a3ebe1c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17d5809d7ad857859b78616aca3cadcc') in 0.0189914 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.118288 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/18.gif
+  artifactKey: Guid(3d15f7dbea97ace4f8b5cc8b0b2c650e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/18.gif using Guid(3d15f7dbea97ace4f8b5cc8b0b2c650e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9eb80843fc6378cea878d5f040460fb9') in 0.0220842 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015813 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/20.gif
+  artifactKey: Guid(8f34a4c8d89da4a41ba6551f313be669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/ninja-adventure/fx/20.gif using Guid(8f34a4c8d89da4a41ba6551f313be669) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c1d5d0371844fa51207402dc58ea943') in 0.0140126 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.305361 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/top-down-shooter/effects/2.gif
+  artifactKey: Guid(9be8a3ddb3f9e6f4eb1abc3ec69346a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/top-down-shooter/effects/2.gif using Guid(9be8a3ddb3f9e6f4eb1abc3ec69346a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ffedb51034fe30ea2bfa600ff158578e') in 0.0163296 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025853 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/top-down-shooter/effects/3.gif
+  artifactKey: Guid(81dfdbdee70a90e4dbab336c1451cd34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/top-down-shooter/effects/3.gif using Guid(81dfdbdee70a90e4dbab336c1451cd34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c8c04d0ebbd9f1ab0b4f4f1182b2510e') in 0.0138288 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011684 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/top-down-shooter/effects/4.gif
+  artifactKey: Guid(f23de978873f38943ba2d438ed1d371d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/top-down-shooter/effects/4.gif using Guid(f23de978873f38943ba2d438ed1d371d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b97e335bc502b23aa85b90162e1ff9b9') in 0.0122705 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045593 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/top-down-shooter/effects/explosion.gif
+  artifactKey: Guid(d4a4d491ee32dc24eb0b466b96570a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/top-down-shooter/effects/explosion.gif using Guid(d4a4d491ee32dc24eb0b466b96570a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e7bc496306ff89298fedd2d4587c0476') in 0.013501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.725630 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/1.png
+  artifactKey: Guid(6f7e5ee7f6e5cf0408460eaade636632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/1.png using Guid(6f7e5ee7f6e5cf0408460eaade636632) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '647e82d25d139802e2871d0732772da8') in 0.0162068 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/2.png
+  artifactKey: Guid(b1cd0235b1e506941be6f5e410257090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/2.png using Guid(b1cd0235b1e506941be6f5e410257090) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '337cda748284a8b3e9f9b98f7a341f82') in 0.0146503 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037028 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/4.png
+  artifactKey: Guid(3e877646bf7a1af47abfa98163959763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/4.png using Guid(3e877646bf7a1af47abfa98163959763) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '982c21ae0b1fc4d20eb9ef886db94a8d') in 0.0137286 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001398 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/6.png
+  artifactKey: Guid(fe8fd746a72583f499fdde40e840b849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/6.png using Guid(fe8fd746a72583f499fdde40e840b849) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c41af0afe499d8431be750869a21a8b5') in 0.0215462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/7.gif
+  artifactKey: Guid(04bf60d2f93d24943b8d3cf379e94357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/7.gif using Guid(04bf60d2f93d24943b8d3cf379e94357) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '22ea42de27d1697de7ab8ab8563a263f') in 0.0119337 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026943 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/8.png
+  artifactKey: Guid(1cdcc13fbcbf7af4daed29c5f87be0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/8.png using Guid(1cdcc13fbcbf7af4daed29c5f87be0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'baa0b17022c45d03edab57f2d86498b2') in 0.0122458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008568 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/9.png
+  artifactKey: Guid(dddfe10a289900449839cc48b822fe2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/9.png using Guid(dddfe10a289900449839cc48b822fe2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67a8a95b8b4dbef9835e8c9b961673b2') in 0.0126464 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.042182 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/11.gif
+  artifactKey: Guid(9ebd8511489c40b4581026cbf0a45769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/medieval-fantasy/fx/11.gif using Guid(9ebd8511489c40b4581026cbf0a45769) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f61511c4b88049c959b3d7ac8bf0456d') in 0.0136306 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.061348 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/prehistoric-platformer/fx/effects/1-preview.gif
+  artifactKey: Guid(1acbe4b18141a8d4889a8c4d8b1a5c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/prehistoric-platformer/fx/effects/1-preview.gif using Guid(1acbe4b18141a8d4889a8c4d8b1a5c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0aa4fa3c755ca2f516d30db833088336') in 0.0132842 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004772 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/prehistoric-platformer/fx/effects/2-preview.gif
+  artifactKey: Guid(fe247169dd15867459bb340bc54798e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/prehistoric-platformer/fx/effects/2-preview.gif using Guid(fe247169dd15867459bb340bc54798e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43769a7d870a1824ce9ec89c22855683') in 0.0120908 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025875 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/prehistoric-platformer/fx/effects/4.png
+  artifactKey: Guid(0912320d357b955449f648fb7d358812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/prehistoric-platformer/fx/effects/4.png using Guid(0912320d357b955449f648fb7d358812) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a6df34963c37d7429a14a5018598a630') in 0.012855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004938 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/prehistoric-platformer/fx/effects/smoke.png
+  artifactKey: Guid(b0bc621b9a3a43f44b014ecd06fdf627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/prehistoric-platformer/fx/effects/smoke.png using Guid(b0bc621b9a3a43f44b014ecd06fdf627) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fe039043b3dd4419e394ae3a08fe725f') in 0.0120122 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.489001 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/western-fps-2d/fx/1.png
+  artifactKey: Guid(ae5f285a5d4e5864f86e0a2d4fe07ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/western-fps-2d/fx/1.png using Guid(ae5f285a5d4e5864f86e0a2d4fe07ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '40e71715cb0ee056ae3edda4667b3897') in 0.0137381 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.121015 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/western-fps-2d/fx/4.gif
+  artifactKey: Guid(ad01500d1df75ed48bd8888fcf83792f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/western-fps-2d/fx/4.gif using Guid(ad01500d1df75ed48bd8888fcf83792f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5107d3e3de81851b18e28ee109713857') in 0.0157744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027172 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/western-fps-2d/fx/6.png
+  artifactKey: Guid(0ced4a7909f7d9f4693bd1c17a9ad0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/western-fps-2d/fx/6.png using Guid(0ced4a7909f7d9f4693bd1c17a9ad0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9dc65841aac2b14ec2edc3e2556f4711') in 0.0131732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018831 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/western-fps-2d/fx/7.png
+  artifactKey: Guid(7960f3f8395485640b3cd23b9490efb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/western-fps-2d/fx/7.png using Guid(7960f3f8395485640b3cd23b9490efb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d188072cca2bd27931fc0f51799d9e0') in 0.0122314 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/western-fps-2d/fx/explosion.png
+  artifactKey: Guid(35e05251380d880448f51a9045f6d708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/western-fps-2d/fx/explosion.png using Guid(35e05251380d880448f51a9045f6d708) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05cb2bef25a03e271a35dedd98f7bd9e') in 0.0476248 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004771 seconds.
+  path: Assets/Sprites/superpowers-asset-packs-master/western-fps-2d/fx/smoke-2.png
+  artifactKey: Guid(a312da2610aefe44f8108a4f86f5bf8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/superpowers-asset-packs-master/western-fps-2d/fx/smoke-2.png using Guid(a312da2610aefe44f8108a4f86f5bf8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9001dff0fda1c675a1b9e2336f29c6bf') in 0.0219893 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.913345 seconds.
+  path: Assets/Resources/ScriptableObjects/Projectiles/ViewData/Impacts/impact_view_ground_01.asset
+  artifactKey: Guid(91495d2533cb53546848a48a2f9086fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/Projectiles/ViewData/Impacts/impact_view_ground_01.asset using Guid(91495d2533cb53546848a48a2f9086fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f131856fceeabc44e5d983e271a9768') in 0.0016517 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/ScriptableObjects/Projectiles/ViewData/Impacts/impact_view_hit_02.asset
+  artifactKey: Guid(0d04f5a645e3dce4393bfa4e9dfd5762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/Projectiles/ViewData/Impacts/impact_view_hit_02.asset using Guid(0d04f5a645e3dce4393bfa4e9dfd5762) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01013430f0789172da5111224e42137e') in 0.0009769 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/ScriptableObjects/Projectiles/ViewData/Impacts/impact_view_ice_01.asset
+  artifactKey: Guid(983780be5e785734d87b8565e33e5452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/Projectiles/ViewData/Impacts/impact_view_ice_01.asset using Guid(983780be5e785734d87b8565e33e5452) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '002b87612ab41183651938bdf25bf4e2') in 0.0013929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -19,13 +19,19 @@ namespace Skills
         #region Commands
         public override IEnumerator Execute(BattleUnit user, BattleUnit target, System.Action completeCallback)
         {
+            
             _onComplete = completeCallback;
             this.user = user;
             this.target = target;
 
-            user.ChangeAnimationState(user.Data.Motions.Range);
+            AnimationClip animation = user.Data.Motions.Range1;
 
-            while(!user.IsAnimationFinished(user.Data.Motions.Range.name))
+            if (animationVariant > 1)
+                animation = user.Data.Motions.Range2;
+
+            user.ChangeAnimationState(animation);
+
+            while(!user.IsAnimationFinished(animation.name))
                 yield return null;
   
             user.ChangeAnimationState(user.Data.Motions.Idle);
@@ -40,7 +46,7 @@ namespace Skills
                 p.SetPosition(target.transform.position);
             else
                 p.SetPosition(user.shootPoint.position)
-                .SetTarget(new Vector3(target.transform.position.x, user.shootPoint.position.y, 0));
+                .SetTarget(new Vector3(target.transform.position.x, target.transform.position.y + 1, 0));
 
             p.Execute();
 

@@ -63,7 +63,7 @@ public partial class BattleManager : PersistentSingleton<BattleManager>
     {
         foreach (var token in _commandTokens)
         {
-            _currentSkill = token.Skill;
+            _currentSkill = token.Skill;            
 
             var user = token.User.host;
             var target = token.Target.host;
