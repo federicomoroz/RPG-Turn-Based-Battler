@@ -28,7 +28,7 @@ namespace Skills
                 .Execute(user,
                 new Vector3(
                     target.unitBase.attackerBase.position.x,
-                    target.unitBase.attackerBase.position.y - 0.1f,
+                    target.unitBase.attackerBase.position.y - 0.016f,
                     0
                     ));           
 

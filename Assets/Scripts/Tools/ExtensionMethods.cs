@@ -1,10 +1,13 @@
-public static class ExtensionMethods 
+namespace Utils
 {
-    public static T SetMultipleCallbacks<T>(this T client, ref System.Action target, params System.Action[] callbacks) where T : class
+    public static class ExtensionMethods 
     {
-        for (int i = 0; i < callbacks.Length; i++)
-            target += callbacks[i];
+        public static T SetMultipleCallbacks<T>(this T client, ref System.Action target, params System.Action[] callbacks) where T : class
+        {
+            for (int i = 0; i < callbacks.Length; i++)
+                target += callbacks[i];
 
-        return client;
+            return client;
+        }
     }
 }

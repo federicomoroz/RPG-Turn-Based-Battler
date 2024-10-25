@@ -6,7 +6,7 @@ namespace Pool
     public class ObjectPool<T> : Pool<T>, IPool<T> where T : MonoBehaviour, IPoolable<T>
     {
         #region Fields
-        protected Transform parent;
+        protected Transform parent { get; private set; }
         #endregion
         #region Constructor
         public ObjectPool(int capacity) : base(capacity) { }
@@ -30,10 +30,7 @@ namespace Pool
         }
         #endregion
         #region Setup
-        public void SetObjectContainer(Transform parent)
-        {
-            this.parent = parent;
-        }
+        public override void SetObjectContainer(Transform parent) => this.parent = parent;                     
         protected override void Fill(int capacity)
         {           
             for (int i = 0; i < capacity; i++)           

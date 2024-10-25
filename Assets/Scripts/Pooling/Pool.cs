@@ -13,7 +13,7 @@ namespace Pool
         protected int capacity;
         #endregion
         #region Properties
-        public abstract int stock { get; }
+        public abstract int Stock { get; }
         #endregion
         #region Constructor
         public Pool(int capacity) 
@@ -23,6 +23,7 @@ namespace Pool
         #endregion
         #region Setup
         public void Initialize() => Fill(capacity);
+        public virtual void SetObjectContainer(Transform transform) { }
         protected abstract void Fill(int capacity);
         #endregion
     }
@@ -34,7 +35,7 @@ namespace Pool
         protected Stack<T> _pooledObjects = new Stack<T>();
         #endregion
         #region Properties
-        public override int stock => _pooledObjects.Count;
+        public override int Stock => _pooledObjects.Count;
         #endregion
         #region Delegates
         protected
@@ -75,7 +76,7 @@ namespace Pool
             for (int i = 0; i < capacity; i++)        
                 _pooledObjects.Push(Create());        
         }
-        protected abstract T Create();
+        protected abstract T Create();        
         #endregion
     }
 }

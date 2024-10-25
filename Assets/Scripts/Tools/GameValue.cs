@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using Utils;
 
 [System.Serializable]
 public class GameValue

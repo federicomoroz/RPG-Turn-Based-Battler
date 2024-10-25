@@ -2,7 +2,6 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Reflection;
 
 namespace Pool
 {
@@ -13,11 +12,11 @@ namespace Pool
         private int _defaultCapacity;
 
         [SerializeField]
-        private bool _globalObjectParent;
+        private bool _useObjectsContainer;
         [SerializeField]
-        private string _poolObjectContainerName = "Pool Objects";
+        private string _objectContainerName = "Pool Objects";
 
-        private Transform _poolObjectsParent;
+        private Transform _objectContainer;
 
         private Dictionary<Type, Pool> _pools = new Dictionary<Type, Pool>();     
 
@@ -55,8 +54,8 @@ namespace Pool
 
             var prefabPool = new PrefabPool<T>(prefab, capacity);
 
-            if(Instance._globalObjectParent)
-                prefabPool.SetObjectContainer(Instance._poolObjectsParent);
+            if(Instance._useObjectsContainer)
+                prefabPool.SetObjectContainer(Instance._objectContainer);
 
             prefabPool.Initialize();
 
@@ -87,30 +86,22 @@ namespace Pool
 
             foreach (var type in poolableTypes)
             {
-                Type poolType;
-
                 if (typeof(IPoolablePrefab).IsAssignableFrom(type))
-                    continue;
+                    continue;                
 
-                poolType =
+                var poolType =
                     typeof(MonoBehaviour).IsAssignableFrom(type) ?
                     typeof(ObjectPool<>).MakeGenericType(type) :
                     typeof(ClassPool<>).MakeGenericType(type);
 
-                var poolInstance = Activator.CreateInstance(poolType, _defaultCapacity);
-                
-                if (_globalObjectParent && 
-                    poolType.IsGenericType && 
-                    poolType.GetGenericTypeDefinition() == typeof(ObjectPool<>))
-                {
-                    var setObjectContainerMethod = poolType.GetMethod("SetObjectContainer");
-                    setObjectContainerMethod?.Invoke(poolInstance, new object[] { _poolObjectsParent });
-                }
+                var poolInstance = Activator.CreateInstance(poolType, _defaultCapacity);                
+           
+                _pools[type] = (Pool)poolInstance;
 
-                _pools[type] = poolInstance as Pool;                
+                if (_useObjectsContainer)
+                    _pools[type].SetObjectContainer(Instance._objectContainer);
 
-                _pools[type].Initialize();
-                
+                _pools[type].Initialize();                
             }
         }
         /// <summary>
@@ -135,7 +126,7 @@ namespace Pool
             var type = typeof(T);
 
             if (_pools.TryGetValue(type, out var pool))                       
-                return pool as IPool<T>;                
+                return (IPool<T>)pool;                
         
             Debug.LogError($"No se encontró un pool para el tipo {type}");
             return null;
@@ -165,8 +156,8 @@ namespace Pool
         /// </summary>
         private void Initialize()
         {
-            if (_globalObjectParent) 
-                _poolObjectsParent = new GameObject(_poolObjectContainerName).transform;         
+            if (_useObjectsContainer) 
+                _objectContainer = new GameObject(_objectContainerName).transform;         
             
             CreatePools();
         }

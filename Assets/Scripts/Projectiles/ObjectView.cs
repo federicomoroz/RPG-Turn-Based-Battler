@@ -1,6 +1,7 @@
 ﻿using Managers;
 using UnityEngine;
 using Pool;
+using Utils;
 
 public class ObjectView
 {

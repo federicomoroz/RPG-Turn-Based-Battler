@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\managers\\poolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\poolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\pooling\\prefabpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pooling\\prefabpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\skills\\scriptableobjects\\meleeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\scriptableobjects\\meleeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MeleeAttack.cs",
+              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\ScriptableObjects\\MeleeAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\ScriptableObjects\\MeleeAttack.cs",
+              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\ScriptableObjects\\MeleeAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skills\\ScriptableObjects\\MeleeAttack.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:33:44.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PrefabPool.cs",
+              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Pooling\\PrefabPool.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Pooling\\PrefabPool.cs",
+              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Pooling\\PrefabPool.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Pooling\\PrefabPool.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:27:29.546Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +58,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\PoolManager.cs",
               "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Managers\\PoolManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\PoolManager.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAK8AAAAAAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAKYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T05:25:19.601Z",
               "EditorCaption": ""
