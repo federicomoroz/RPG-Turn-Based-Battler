@@ -4,6 +4,11 @@ using BattleUnits;
 
 public abstract class SO_Movement : ScriptableObject
 {
+    #region Fields
+    [SerializeField]
+    [Range(0,1f)]
+    protected float sfxVolume = 0.85f;
+    #endregion
     #region Dependencies
     [SerializeField]
     protected AudioClip sfxCast;

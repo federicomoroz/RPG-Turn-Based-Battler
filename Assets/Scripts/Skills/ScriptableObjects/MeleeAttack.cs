@@ -11,6 +11,9 @@ namespace Skills
     {
         #region Fields
         private Vector3 hitPosition;
+        [SerializeField]
+        [Range(0, 1f)]
+        private float _sfxVolume = 0.85f;
         #endregion
         #region Dependencies
         [SerializeField]
@@ -24,18 +27,17 @@ namespace Skills
         #region Commands
         public override IEnumerator Execute(BattleUnit user, BattleUnit target, System.Action completeCallback)
         {   
-            yield return user.Data.MovementType          
-                .Execute(user,
+            yield return MoveTo(
+                user, 
                 new Vector3(
                     target.unitBase.attackerBase.position.x,
                     target.unitBase.attackerBase.position.y - 0.016f,
-                    0
-                    ));           
+                    0)
+                );
 
             yield return PerformAttack(user, target);
 
-            yield return user.Data.MovementType  
-                .Execute(user, user.unitBase.transform.position);
+            yield return MoveTo(user, user.unitBase.transform.position);
 
             completeCallback?.Invoke();
             user.ChangeAnimationState(user.Data.Motions.Idle);            
@@ -44,7 +46,7 @@ namespace Skills
         }
         public override void Trigger()
         {
-            SoundManager.PlaySound(sfx);
+            SoundManager.PlaySound(sfx, _sfxVolume);
             CheckImpactSpawn();
             //hacerle daño al enemigo
         }

@@ -33,5 +33,5 @@ MonoBehaviour:
     element: {fileID: 0}
   priority: 0
   DoMovement: 0
-  animationName: Range
+  animationVariant: 1
   _projectile: {fileID: 11400000, guid: 9f297f2873e8f55419f021b538f47104, type: 2}

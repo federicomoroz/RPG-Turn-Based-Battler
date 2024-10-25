@@ -27,5 +27,4 @@ MonoBehaviour:
   lifeTime: 0
   viewData: {fileID: 11400000, guid: 6ed49bcc3646b294fb472db64aa7088b, type: 2}
   impacts:
-  - {fileID: 11400000}
   - {fileID: 11400000, guid: 21f0ce87fd1093d498143fa34c1fd450, type: 2}

@@ -39,4 +39,4 @@ MonoBehaviour:
     cast: {fileID: 8300000, guid: e8df7f719be042946b8ac707c0b8fbc6, type: 3}
     loop: {fileID: 0}
     impact: {fileID: 0}
-  animationSpeed: 9
+  animationSpeed: 8

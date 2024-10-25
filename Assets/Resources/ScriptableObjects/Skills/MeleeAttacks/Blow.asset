@@ -32,7 +32,7 @@ MonoBehaviour:
     variance: 10
     element: {fileID: 0}
   priority: 2
-  DoMovement: 1
   animationVariant: 1
-  sfx: {fileID: 8300000, guid: 4dbdd5d1d277dc3488c618b6b411dc07, type: 3}
+  _sfxVolume: 0.7
+  sfx: {fileID: 8300000, guid: 446dee533cec9a448b8f3df7254e64ff, type: 3}
   impact: {fileID: 11400000, guid: 72b4188a74a7bfe4da45eeadfa6d9354, type: 2}

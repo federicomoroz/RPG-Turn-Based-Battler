@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using BattleUnits;
+using static UnityEngine.GraphicsBuffer;
 
 namespace Skills
 {
@@ -20,7 +21,6 @@ namespace Skills
         public Message message = new Message();
         public Affect affect = new Affect();
         public Priority priority;
-        public bool DoMovement;
         [Range(1,2)]
         public ushort animationVariant;
 
@@ -28,6 +28,11 @@ namespace Skills
         #region Commands
         public abstract IEnumerator Execute(BattleUnit user, BattleUnit target, System.Action completeCallback);
         public abstract void Trigger();
+        protected IEnumerator MoveTo(BattleUnit user, Vector3 position)
+        {
+            yield return user.Data.MovementType
+                .Execute(user,position);
+        }
         #endregion
     }
 }

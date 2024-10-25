@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Giant
   <Skills>k__BackingField:
-    defaultAttack: {fileID: 11400000, guid: d6e90631a5f35124d94571887a8b72ee, type: 2}
+    defaultAttack: {fileID: 11400000, guid: fc2e0468aad179a449beadde6e74d96f, type: 2}
     physicalSkills: []
     specialSkills:
     - {fileID: 11400000, guid: d4d451a98c163f946b09c061d45a2614, type: 2}
+    defend: {fileID: 0}
   _stats: {fileID: 11400000, guid: a35b23058a40c304ebf19824ff4262c1, type: 2}
   _motions: {fileID: 11400000, guid: a361d9ae91b853d46b32ed4b2d5a8121, type: 2}
   _spritesVariants:

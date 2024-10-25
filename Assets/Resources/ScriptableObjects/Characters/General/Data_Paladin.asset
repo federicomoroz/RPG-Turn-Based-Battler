@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Paladin
   <Skills>k__BackingField:
-    defaultAttack: {fileID: 11400000, guid: d6e90631a5f35124d94571887a8b72ee, type: 2}
+    defaultAttack: {fileID: 11400000, guid: 1e7dafc4ac3356640b6954d56b9c714c, type: 2}
     physicalSkills: []
     specialSkills: []
     defend: {fileID: 0}

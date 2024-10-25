@@ -22,7 +22,7 @@ namespace Skills
                 yield return null;
 
             user.ChangeAnimationState(user.Data.Motions.Dash.Loop);
-            SoundManager.PlaySound(sfxCast);
+            SoundManager.PlaySound(sfxCast, sfxVolume);
 
             _movement.Execute(
                 user.transform, 

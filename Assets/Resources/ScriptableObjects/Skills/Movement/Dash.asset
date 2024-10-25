@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e1ae465ef9a7f46b75945bc890eafa, type: 3}
   m_Name: Dash
   m_EditorClassIdentifier: 
-  sfxCast: {fileID: 8300000, guid: 9c7772cbcd9a71e438a46dce5bc21533, type: 3}
+  sfxVolume: 0.4
+  sfxCast: {fileID: 8300000, guid: 40ad02b6a6e60774a8d1b18f16275f56, type: 3}
   speed: 20

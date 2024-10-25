@@ -5936,7 +5936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _commandTokens:
-  - Skill: {fileID: 11400000, guid: d6e90631a5f35124d94571887a8b72ee, type: 2}
+  - Skill: {fileID: 11400000, guid: 1e7dafc4ac3356640b6954d56b9c714c, type: 2}
     User: {fileID: 1747049710}
     Target: {fileID: 1826564989}
   - Skill: {fileID: 11400000, guid: 0c89a490920618947a8126b92d68c680, type: 2}
@@ -5945,7 +5945,7 @@ MonoBehaviour:
   - Skill: {fileID: 11400000, guid: d6e90631a5f35124d94571887a8b72ee, type: 2}
     User: {fileID: 89610178}
     Target: {fileID: 1826564989}
-  - Skill: {fileID: 11400000, guid: d6e90631a5f35124d94571887a8b72ee, type: 2}
+  - Skill: {fileID: 11400000, guid: fc2e0468aad179a449beadde6e74d96f, type: 2}
     User: {fileID: 1826564989}
     Target: {fileID: 89610178}
   - Skill: {fileID: 11400000, guid: 54cefbd3038cc2044aad162772f6f6ea, type: 2}

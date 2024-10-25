@@ -35,28 +35,7 @@ public partial class BattleManager : PersistentSingleton<BattleManager>
 
         Instance._currentSkill.Trigger();
     }
-    public static void SendAffectToken(AffectToken affectToken, BattleUnit target)
-    {
-        switch (affectToken.Action)
-        {
-            case AffectAction.HPDamage:
-                target.TakeHp(affectToken.Value);
-                break;
-            case AffectAction.MPDamage:
-                target.TakeMp(affectToken.Value);
-                break;
-            case AffectAction.HPRecover:
-                target.HealHp(affectToken.Value);
-                break;
-            case AffectAction.MPRecover:
-                target.HealMp(affectToken.Value);
-                break;
-            case AffectAction.HPDrain:
-                break;
-            case AffectAction.MPDrain:
-                break;
-        }
-    }
+
     #endregion
     #region Helpers / Utils
     private IEnumerator Perform()
