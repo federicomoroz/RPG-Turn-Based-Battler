@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 567e0d8ab84252e4894155c37512a494, type: 3}
   m_Name: impact_view_hit_02
   m_EditorClassIdentifier: 
-  Name: Impact Hit 02
+  Name: Impact View Hit 02
   sprites: []
   isAnimated: 0
   sfx:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+    cast: {fileID: 0}
+    loop: {fileID: 0}
+    impact: {fileID: 0}
   animationSpeed: 0

@@ -3,40 +3,8 @@
   "WorkspaceRootPath": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\projectiles\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectiles\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\projectiles\\scriptableobjects\\so_projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectiles\\scriptableobjects\\so_projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D7910D3-1DFA-08F3-824B-91FF15956EC4}|Assembly-CSharp-Editor.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\editor\\projectileeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D7910D3-1DFA-08F3-824B-91FF15956EC4}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\projectileeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\skills\\scriptableobjects\\rangeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\scriptableobjects\\rangeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\skills\\scriptableobjects\\so_skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\scriptableobjects\\so_skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\skills\\scriptableobjects\\meleeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\scriptableobjects\\meleeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\managers\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\skills\\movement\\scriptableobjects\\dash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\movement\\scriptableobjects\\dash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\characters\\battleunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characters\\battleunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\managers\\poolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\poolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjectileEditor.cs",
-              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Editor\\ProjectileEditor.cs",
-              "RelativeDocumentMoniker": "Assets\\Editor\\ProjectileEditor.cs",
-              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Editor\\ProjectileEditor.cs",
-              "RelativeToolTip": "Assets\\Editor\\ProjectileEditor.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAADYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T06:51:43.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SO_Projectile.cs",
-              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Projectiles\\ScriptableObjects\\SO_Projectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Projectiles\\ScriptableObjects\\SO_Projectile.cs",
-              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Projectiles\\ScriptableObjects\\SO_Projectile.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Projectiles\\ScriptableObjects\\SO_Projectile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T06:49:58.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Projectile.cs",
-              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Projectiles\\Projectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Projectiles\\Projectile.cs",
-              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Projectiles\\Projectile.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Projectiles\\Projectile.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAJQAAAAAAAAA",
+              "Title": "PoolManager.cs",
+              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Managers\\PoolManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\PoolManager.cs",
+              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Managers\\PoolManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\PoolManager.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAK8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T06:46:30.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RangeAttack.cs",
-              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\ScriptableObjects\\RangeAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\ScriptableObjects\\RangeAttack.cs",
-              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\ScriptableObjects\\RangeAttack.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Skills\\ScriptableObjects\\RangeAttack.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwDAAAABjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T06:13:37.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Dash.cs",
-              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\Movement\\ScriptableObjects\\Dash.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\Movement\\ScriptableObjects\\Dash.cs",
-              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\Movement\\ScriptableObjects\\Dash.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Skills\\Movement\\ScriptableObjects\\Dash.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAgwCYAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T05:32:57.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SO_Skill.cs",
-              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\ScriptableObjects\\SO_Skill.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\ScriptableObjects\\SO_Skill.cs",
-              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\ScriptableObjects\\SO_Skill.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Skills\\ScriptableObjects\\SO_Skill.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T05:26:27.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BattleUnit.cs",
-              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Characters\\BattleUnit.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Characters\\BattleUnit.cs",
-              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Characters\\BattleUnit.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Characters\\BattleUnit.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAArwEAAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T05:04:40.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BattleManager.cs",
-              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Managers\\BattleManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\BattleManager.cs",
-              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Managers\\BattleManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Managers\\BattleManager.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAIwEgAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T05:02:33.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MeleeAttack.cs",
-              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\ScriptableObjects\\MeleeAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\ScriptableObjects\\MeleeAttack.cs",
-              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\ScriptableObjects\\MeleeAttack.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Skills\\ScriptableObjects\\MeleeAttack.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAYwB4AAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T04:45:40.549Z",
+              "WhenOpened": "2024-10-25T05:25:19.601Z",
               "EditorCaption": ""
             }
           ]

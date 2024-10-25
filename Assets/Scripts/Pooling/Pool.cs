@@ -18,17 +18,17 @@ namespace Pool
         #region Constructor
         public Pool(int capacity) 
         {
-            this.capacity = capacity;
-            Fill(capacity);
+            this.capacity = capacity;            
         }
         #endregion
         #region Setup
+        public void Initialize() => Fill(capacity);
         protected abstract void Fill(int capacity);
         #endregion
     }
 
     [System.Serializable]
-    public class Pool<T> : Pool, IPool<T> where T : IPoolable<T>, new()
+    public abstract class Pool<T> : Pool, IPool<T> where T : IPoolable<T>
     {
         #region Fields
         protected Stack<T> _pooledObjects = new Stack<T>();
@@ -74,8 +74,8 @@ namespace Pool
         {
             for (int i = 0; i < capacity; i++)        
                 _pooledObjects.Push(Create());        
-        }    
-        protected virtual T Create()  => new T().Initialize();
+        }
+        protected abstract T Create();
         #endregion
     }
 }

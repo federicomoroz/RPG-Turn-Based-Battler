@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a7484a7e8dc984a8073078ab44f153, type: 3}
+  m_Name: Blow
+  m_EditorClassIdentifier: Assembly-CSharp::MeleeAttack
+  icon: {fileID: 0}
+  Name: Blow
+  description: Basic melee blow attack
+  costMP: 0
+  scope:
+    side: 1
+    number: 0
+  invocation:
+    accuracy: 0.95
+    isEvadable: 1
+  message:
+    line1: 
+    line2: 
+  affect:
+    action: 0
+    type: 0
+    basePower: 20
+    variance: 10
+    element: {fileID: 0}
+  priority: 2
+  DoMovement: 1
+  animationVariant: 1
+  sfx: {fileID: 8300000, guid: 4dbdd5d1d277dc3488c618b6b411dc07, type: 3}
+  impact: {fileID: 11400000, guid: 72b4188a74a7bfe4da45eeadfa6d9354, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 567e0d8ab84252e4894155c37512a494, type: 3}
   m_Name: impact_view_blood_01
   m_EditorClassIdentifier: 
-  Name: Impact Blood
+  Name: Impact View Blood 01
   sprites:
   - sprite: {fileID: -392068059, guid: a2ecdddb982f4524d9192d6c1039283f, type: 3}
     playSfx: 0

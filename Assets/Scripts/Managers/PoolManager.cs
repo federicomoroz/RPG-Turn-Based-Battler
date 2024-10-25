@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Reflection;
 
 namespace Pool
 {
@@ -12,21 +13,20 @@ namespace Pool
         private int _defaultCapacity;
 
         [SerializeField]
-        private bool _debug;
-
+        private bool _globalObjectParent;
         [SerializeField]
+        private string _poolObjectContainerName = "Pool Objects";
+
+        private Transform _poolObjectsParent;
+
         private Dictionary<Type, Pool> _pools = new Dictionary<Type, Pool>();     
 
-        [SerializeField]
-        private List<PoolContainer> _poolsContainer = new List<PoolContainer>();
+        private Dictionary<Type, Dictionary<string, Pool>> _prefabPools = 
+            new Dictionary<Type, Dictionary<string, Pool>>();
+
         #endregion
         #region Commands
-        public static T GetObject<T>() where T : IPoolable<T>
-        {     
-            Instance.UpdateView<T>();
-      
-            return Instance.GetPool<T>().Pull(); 
-        }
+        public static T GetObject<T>() where T : IPoolable<T> => Instance.GetPool<T>().Pull(); 
         public static T GetObject<T>(Vector3 position) where T : MonoBehaviour, IPoolable<T>
         {
             var obj = GetObject<T>();
@@ -39,15 +39,80 @@ namespace Pool
             obj.transform.rotation = rotation;
             return obj;
         }
-        public static void ReturnObject<T>(T item) where T : IPoolable<T>
-        {        
-            var pool = Instance.GetPool<T>();
-            pool.Push(item);
+        public static void ReturnObject<T>(T item) where T : IPoolable<T> => Instance.GetPool<T>().Push(item);     
+        public static void CreatePrefabPool<T>(GameObject prefab, int capacity) where T : MonoBehaviour, IPoolable<T>, IPoolablePrefab
+        {      
+            var type = typeof(T);
 
-            Instance.UpdateView<T>();       
+            if (!Instance._prefabPools.ContainsKey(type))            
+                Instance._prefabPools[type] = new Dictionary<string, Pool>();                      
+              
+            if (Instance._prefabPools[type].ContainsKey(prefab.name))
+            {
+                Debug.LogWarning($"El prefab pool para {prefab.name} ya existe.");
+                return;
+            }           
+
+            var prefabPool = new PrefabPool<T>(prefab, capacity);
+
+            if(Instance._globalObjectParent)
+                prefabPool.SetObjectContainer(Instance._poolObjectsParent);
+
+            prefabPool.Initialize();
+
+            Instance._prefabPools[type].Add(prefab.name, prefabPool);
         }
+        public static T GetPrefabObject<T>(string name) where T : MonoBehaviour, IPoolable<T>, IPoolablePrefab 
+            => Instance.GetPrefabPool<T>(name).Pull();
+        public static T GetPrefabObject<T>(string name, Vector3 position) where T : MonoBehaviour, IPoolable<T>, IPoolablePrefab
+        {
+            var obj = GetPrefabObject<T>(name);
+            obj.transform.position = position;
+            return obj;
+        }
+        public static T GetPrefabObject<T>(string name, Vector3 position, Quaternion rotation) where T : MonoBehaviour, IPoolable<T>, IPoolablePrefab
+        {
+            var obj = GetPrefabObject<T>(name, position);
+            obj.transform.rotation = rotation;
+            return obj;
+        }
+        public static void ReturnPrefabObject<T>(T item) where T : MonoBehaviour, IPoolable<T>, IPoolablePrefab 
+            => Instance.GetPrefabPool<T>(item.name).Push(item);
+        
         #endregion
         #region Helpers / Utils
+        private void CreatePools()
+        {
+            var poolableTypes = GetAllPoolableTypes();
+
+            foreach (var type in poolableTypes)
+            {
+                Type poolType;
+
+                if (typeof(IPoolablePrefab).IsAssignableFrom(type))
+                    continue;
+
+                poolType =
+                    typeof(MonoBehaviour).IsAssignableFrom(type) ?
+                    typeof(ObjectPool<>).MakeGenericType(type) :
+                    typeof(ClassPool<>).MakeGenericType(type);
+
+                var poolInstance = Activator.CreateInstance(poolType, _defaultCapacity);
+                
+                if (_globalObjectParent && 
+                    poolType.IsGenericType && 
+                    poolType.GetGenericTypeDefinition() == typeof(ObjectPool<>))
+                {
+                    var setObjectContainerMethod = poolType.GetMethod("SetObjectContainer");
+                    setObjectContainerMethod?.Invoke(poolInstance, new object[] { _poolObjectsParent });
+                }
+
+                _pools[type] = poolInstance as Pool;                
+
+                _pools[type].Initialize();
+                
+            }
+        }
         /// <summary>
         /// Devuelve una lista con todas las clases no abstractas
         /// que implementan la interface IPoolable<T>
@@ -68,19 +133,23 @@ namespace Pool
         private IPool<T> GetPool<T>() where T : IPoolable<T>
         {
             var type = typeof(T);
+
             if (_pools.TryGetValue(type, out var pool))                       
                 return pool as IPool<T>;                
         
             Debug.LogError($"No se encontró un pool para el tipo {type}");
             return null;
         }
-        private void UpdateView<T>()
+        private IPool<T> GetPrefabPool<T>(string prefabName) where T : MonoBehaviour, IPoolable<T>, IPoolablePrefab
         {
-            if (_debug)
-            {
-                var poolContainer = _poolsContainer.FirstOrDefault(pool => pool.type == typeof(T));
-                poolContainer.UpdateStock();
-            }
+            var type = typeof(T);
+
+            if (_prefabPools.TryGetValue(type, out var prefabDict) &&
+                    prefabDict.TryGetValue(prefabName, out var pool))
+                return (pool as IPool<T>);         
+
+            Debug.LogError($"No se encontró un pool para el prefab {prefabName} de tipo {type}");
+            return null;
         }
         #endregion
         #region Lifecycle
@@ -90,30 +159,16 @@ namespace Pool
             Initialize();
         }
         /// <summary>
-        /// Crea un pool por cada clase que implementa la interface IPoolable<T>
-        /// y los agrega al dictionary utilizando su type como key.
+        /// Crea un pool por cada clase que implementa la interface IPoolable<T> 
+        /// deja de lado las que implementan IPoolablePrefab y los agrega al dictionary 
+        /// utilizando su type como key.
         /// </summary>
         private void Initialize()
         {
-            // Cachear todas las clases que implementan IPoolable<T>
-            var poolableTypes = GetAllPoolableTypes();
-        
-            foreach (var type in poolableTypes)
-            {
-                Type poolType;
-
-                poolType = 
-                    typeof(MonoBehaviour).IsAssignableFrom(type) ? 
-                    typeof(ObjectPool<>).MakeGenericType(type) : 
-                    typeof(Pool<>).MakeGenericType(type);
+            if (_globalObjectParent) 
+                _poolObjectsParent = new GameObject(_poolObjectContainerName).transform;         
             
-                var poolInstance = Activator.CreateInstance(poolType, _defaultCapacity);
-            
-                _pools[type] = poolInstance as Pool;
-
-                if(_debug) 
-                    _poolsContainer.Add(new PoolContainer(poolInstance as Pool, type).UpdateStock());
-            }
+            CreatePools();
         }
         #endregion
     }

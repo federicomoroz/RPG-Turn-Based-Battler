@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 567e0d8ab84252e4894155c37512a494, type: 3}
   m_Name: impact_view_arrow_01
   m_EditorClassIdentifier: 
-  Name: Impact Arrow
+  Name: Impact View Arrow 01
   sprites:
   - sprite: {fileID: -329024481, guid: 9e35a9ac98fba854c92061cde536b43f, type: 3}
     playSfx: 0

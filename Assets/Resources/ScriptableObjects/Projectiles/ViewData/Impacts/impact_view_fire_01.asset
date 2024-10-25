@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 567e0d8ab84252e4894155c37512a494, type: 3}
   m_Name: impact_view_fire_01
   m_EditorClassIdentifier: 
-  Name: Impact Fire
+  Name: Impact View Fire 01
   sprites:
   - sprite: {fileID: -1050757160, guid: 327b2ac073f134f4eb3fa2ebbeb69746, type: 3}
     playSfx: 0

@@ -3,16 +3,13 @@
 namespace Pool
 {
     [System.Serializable]
-    public class ObjectPool<T> : Pool<T>, IPool<T> where T : MonoBehaviour, IPoolable<T>, new()
+    public class ObjectPool<T> : Pool<T>, IPool<T> where T : MonoBehaviour, IPoolable<T>
     {
+        #region Fields
+        protected Transform parent;
+        #endregion
         #region Constructor
-        public ObjectPool(int capacity = 0) : base(capacity) { }
-        public ObjectPool(System.Action<T> pullObject, System.Action<T> pushObject, int capacity = 0) : base(capacity)
-        {        
-            this.pullObject = pullObject;
-            this.pushObject = pushObject; 
-            Fill(capacity);
-        }
+        public ObjectPool(int capacity) : base(capacity) { }
         #endregion
         #region Commands
         public override T Pull()
@@ -24,18 +21,7 @@ namespace Pool
             pullObject?.Invoke(item);
             return item;
         }
-        public T Pull(Vector3 position)
-        {
-            T item = Pull();
-            item.transform.position = position;
-            return item;
-        }
-        public T Pull(Vector3 position, Quaternion rotation)
-        {
-            T item = Pull(position);
-            item.transform.rotation = rotation;
-            return item;
-        }
+
         public override void Push(T item)
         {
             item.gameObject.SetActive(false);
@@ -44,26 +30,21 @@ namespace Pool
         }
         #endregion
         #region Setup
-        protected override void Fill(int capacity)
+        public void SetObjectContainer(Transform parent)
         {
-            T item;
-
-            for (int i = 0; i < capacity; i++)
-            {
-                item = Create();
-                Push(item);
-            }
+            this.parent = parent;
+        }
+        protected override void Fill(int capacity)
+        {           
+            for (int i = 0; i < capacity; i++)           
+                Push(Create());            
         }
         protected override T Create() 
         {
             var item = new GameObject($"o_{typeof(T)}");
 
-            Transform parent = GameObject.Find("PoolObjects").transform;
-
-            if (parent == null)
-                parent = new GameObject("PoolObjects").transform;
-
-            item.transform.parent = parent;
+            if( parent != null ) 
+                item.transform.parent = parent;
 
             return item.AddComponent<T>();        
         }

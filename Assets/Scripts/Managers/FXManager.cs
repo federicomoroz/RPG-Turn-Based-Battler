@@ -1,3 +1,4 @@
+using Pool;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,13 +8,9 @@ namespace Managers
     {
         #region Fields
         private Dictionary<string, SO_VFX> _vfxVault = new Dictionary<string, SO_VFX>();
-        #endregion
-        #region Lifecycle
-        protected override void Awake()
-        {
-            base.Awake();
-            FillVault();
-        }
+
+        [SerializeField]
+        private List<PoolablePrefabSlot> _fxPoolItems;
         #endregion
         #region Setup
         private void FillVault()
@@ -41,7 +38,14 @@ namespace Managers
             return null;
         }
         #endregion
+        #region Lifecycle
+        protected void Start()
+        {            
+            FillVault();
+            foreach (var item in _fxPoolItems)            
+                PoolManager.CreatePrefabPool<Impact>(item.prefab, item.amount);
+            
+        }
+        #endregion
     }
 }
-
-

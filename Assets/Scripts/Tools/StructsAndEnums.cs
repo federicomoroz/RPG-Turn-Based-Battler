@@ -225,3 +225,15 @@ namespace Projectiles
         OnAnimationEnd,
     }
 }
+namespace Pool
+{
+    [System.Serializable]
+    public struct PoolablePrefabSlot
+    {
+        [HideInInspector]
+        public string name => prefab.name;
+
+        public GameObject prefab;
+        public int amount;
+    }
+}
