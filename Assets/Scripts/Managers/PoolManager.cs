@@ -92,11 +92,9 @@ namespace Pool
                 var poolType =
                     typeof(MonoBehaviour).IsAssignableFrom(type) ?
                     typeof(ObjectPool<>).MakeGenericType(type) :
-                    typeof(ClassPool<>).MakeGenericType(type);
-
-                var poolInstance = Activator.CreateInstance(poolType, _defaultCapacity);                
+                    typeof(ClassPool<>).MakeGenericType(type);                            
            
-                _pools[type] = (Pool)poolInstance;
+                _pools[type] = (Pool)Activator.CreateInstance(poolType, _defaultCapacity);
 
                 if (_useObjectsContainer)
                     _pools[type].SetObjectContainer(Instance._objectContainer);

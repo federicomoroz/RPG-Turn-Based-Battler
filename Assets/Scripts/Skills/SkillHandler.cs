@@ -20,8 +20,7 @@ namespace Skills
             user.StartCoroutine(skill.Execute(user, target, onCompleteCallback));
         }
         public void Trigger()
-        {        
-            //var token = GenerateToken(_user);
+        {                    
         
             _activeSkill.Trigger();
         
@@ -36,7 +35,9 @@ namespace Skills
                 _activeSkill.affect.type,
                 CalculateDamage(_activeSkill, user), 
                 _activeSkill.invocation.isEvadable, 
-                _activeSkill.invocation.accuracy
+                _activeSkill.invocation.accuracy,
+                _activeSkill.affect.element,
+                () => Debug.Log($"{_activeSkill.Name} finished")
                 );
 
             return token;
@@ -44,13 +45,14 @@ namespace Skills
 
         private int CalculateDamage(SO_Skill skill, BattleUnit user) 
         {
-            int skillBasePower = skill.affect.basePower;
-            float powerVariance = skill.affect.variance * 0.01f;
-            int affectedPower = Mathf.CeilToInt(Random.Range(skillBasePower-powerVariance, skillBasePower+powerVariance));
-            int power = skill.affect.type == AffectType.Physical ? user.Data.Stats.physicalStrength : user.Data.Stats.specialStrength;
-            float damage = affectedPower * 4 + (user.Data.Stats.level * power * (affectedPower / 32));
-            return Mathf.RoundToInt(damage);
-        
+            var skillBasePower = skill.affect.basePower;
+            var powerVariance = skill.affect.variance * 0.01f;
+            var minBasePower = skill.affect.basePower - powerVariance;
+            var maxBasePower = skill.affect.basePower + powerVariance;
+            var finalBasePower = Mathf.CeilToInt(Random.Range(minBasePower, maxBasePower));
+            var currentStrength = skill.affect.type == AffectType.Physical ? user.Data.Stats.physicalStrength : user.Data.Stats.specialStrength;
+            var damage = finalBasePower * 4 + (user.Data.Stats.level * currentStrength * (finalBasePower / 32));
+            return Mathf.RoundToInt(damage);        
         }
         #endregion
     }

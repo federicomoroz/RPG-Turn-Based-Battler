@@ -20,13 +20,6 @@ public partial class BattleManager : PersistentSingleton<BattleManager>
     private Action _completeTokenCallback;
     #endregion
     #region Commands
-    public void SortCommandTokens()
-    {
-        _commandTokens = _commandTokens
-            .OrderByDescending(token => token.Skill.priority)
-            .ThenByDescending(token => token.User.host.Data.Stats.speed) 
-            .ToList();
-    }
     public static void ExecuteTokens() => Instance.StartCoroutine(Instance.Perform()); 
     public static void TriggerSkill()
     {
@@ -35,9 +28,15 @@ public partial class BattleManager : PersistentSingleton<BattleManager>
 
         Instance._currentSkill.Trigger();
     }
-
     #endregion
     #region Helpers / Utils
+    public void SortCommandTokens()
+    {
+        _commandTokens = _commandTokens
+            .OrderByDescending(token => token.Skill.priority)
+            .ThenByDescending(token => token.User.host.Data.Stats.speed) 
+            .ToList();
+    }
     private IEnumerator Perform()
     {
         foreach (var token in _commandTokens)
@@ -60,7 +59,6 @@ public partial class BattleManager : PersistentSingleton<BattleManager>
         }        
     }
     #endregion
-
 }
 #region Background*
 public partial class BattleManager : PersistentSingleton<BattleManager>

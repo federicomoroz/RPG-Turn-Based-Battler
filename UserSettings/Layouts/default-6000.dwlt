@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 0
     width: 1270
     height: 470
-  m_MinSize: {x: 50, y: 76}
-  m_MaxSize: {x: 4000, y: 4026}
+  m_MinSize: {x: 50, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 11520
+  controlID: 122
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 11521
+  controlID: 123
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 11522
+  controlID: 124
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -267,8 +267,8 @@ MonoBehaviour:
     y: 0
     width: 336
     height: 601
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -293,8 +293,8 @@ MonoBehaviour:
     y: 0
     width: 1065
     height: 601
-  m_MinSize: {x: 50, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 52, y: 76}
+  m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 18}
@@ -321,8 +321,8 @@ MonoBehaviour:
     y: 601
     width: 1401
     height: 340
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 126}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
@@ -533,9 +533,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ccaf0000
-      m_LastClickedID: 45004
-      m_ExpandedIDs: f449ffffc0faffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 60faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1360,7 +1360,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scripts/Skills
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1370,16 +1370,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scripts/Skills
   m_LastFoldersGridSize: 96
   m_LastProjectPath: D:\Proyectos\RPG Turn-Based Battler\RPG-Turn-Based-Battler
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a8b50000
-    m_LastClickedID: 46504
-    m_ExpandedIDs: 000000009eb50000a0b50000a2b50000a4b50000a6b50000a8b50000a4df0000
+    scrollPos: {x: 0, y: 42}
+    m_SelectedIDs: b2c20000
+    m_LastClickedID: 49842
+    m_ExpandedIDs: 00000000d4b20000d6b20000d8b20000dab20000dcb20000deb20000e0b20000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1408,7 +1408,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009eb50000a0b50000a2b50000a4b50000a6b50000a8b500000ac2000010c2000024c2000046ce00000ad0000010d0000016d00000a4df0000
+    m_ExpandedIDs: 00000000d4b20000d6b20000d8b20000dab20000dcb20000deb20000e0b20000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1434,8 +1434,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: ccaf0000
-    m_LastClickedInstanceID: 45004
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000dc6b0000e86b00002c8e0000347100009c710000a47100006c7000004a7000007a830000aa820000ba820000fa8500003a710000407100005e9b0000a2940000e2970000ee9600006097000004b2feff0e9a0000089a0000529a0000526f00002aa100002ca10000227300005a730000247200007672000000000000be73000048730000ba730000506f000032a10000389d00003a9d0000ba720000207200001c73000040cb0000f0880000f48800009c7200008a7500008c75000088720000ce7500009472000024c70000cac60000c0c600002ea4000032a40000e8720000ae7300000a8d000032770000a47a0000e279000008750000ea8200008a90000012740000269700002a9700002e97000032970000867900008a790000ce740000d074000072760000b67900008e9d0000c4820000cc750000ca820000c0790000c87900007880000040e4000074760000a2e5000088e5000066e500008ae50000427f0000547c0000607a0000d280000078760000e480000064a2000060a20000d2a200000a7200006876000060c2000022c8000086c4000026c30000d6c500008cca000092c2000052c30000c4cc0000c0b10000ceb600005e1e01007abc000028b20000e4260100e82601000af50000dec200002abd000018b2000038b2000008b30000a2530100b8a10100bca1010066b40000e6b3000022b40000
     m_RenameOverlay:

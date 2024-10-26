@@ -97,15 +97,26 @@ namespace Skills
         public AffectType Type { get; }
         public int Value { get; }
         public bool IsEvadable { get; }
-        public float Success { get; }
+        public float SuccessRatio { get; }
+        public Element Element { get; }
+        public System.Action OnProcessCompleteCallback { get; }
 
-        public AffectToken(AffectAction action, AffectType type, int value, bool isEvadable, float successProbability)
+        public AffectToken(
+            AffectAction action, 
+            AffectType type, 
+            int value, 
+            bool isEvadable, 
+            float sucessRatio, 
+            Element element,
+            System.Action onProcessCompleteCallback)
         {
             Action = action;
             Type = type;
             Value = value;
             IsEvadable = isEvadable;
-            Success = successProbability;                
+            SuccessRatio = sucessRatio;  
+            Element = element;
+            OnProcessCompleteCallback = onProcessCompleteCallback;
         }
     }
     public enum AffectAction
