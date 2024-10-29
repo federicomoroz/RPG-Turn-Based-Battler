@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\assets\\scripts\\managers\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\skills\\skillhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\skillhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\managers\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\assets\\scripts\\tools\\structsandenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "SkillHandler.cs",
               "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\SkillHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\SkillHandler.cs",
               "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\SkillHandler.cs",
               "RelativeToolTip": "Assets\\Scripts\\Skills\\SkillHandler.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAABRwDoAAAABAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T05:23:20.002Z",
               "EditorCaption": ""
@@ -67,13 +67,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BattleManager.cs",
               "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Managers\\BattleManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\BattleManager.cs",
               "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Managers\\BattleManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\BattleManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "ViewState": "AQIAACAAAAAAAAAAAAAxwCYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T22:21:03.07Z",
               "EditorCaption": ""
