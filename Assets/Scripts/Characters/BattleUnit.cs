@@ -1,3 +1,4 @@
+using Skills;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,25 +12,68 @@ namespace BattleUnits
         [SerializeField]
         private SO_UnitData _data;
         public UnitBase unitBase { get; private set; }
-        [HideInInspector] public Transform shootPoint;    
-  
+        [HideInInspector] public Transform shootPoint;
+
         private Animator _animator;
         private SpriteRenderer _sr;
         #endregion
         #region Properties
         public SO_UnitData Data { get; private set; }
-        public Animator Animator => _animator;     
+        public Animator Animator => _animator;
         public SpriteRenderer Sr => _sr;
         #endregion
         #region Setup
-        public BattleUnit SetUnitBase(UnitBase unitBase) 
-        { 
-            this.unitBase = unitBase; 
+        public BattleUnit SetUnitBase(UnitBase unitBase)
+        {
+            this.unitBase = unitBase;
             return this;
         }
         #endregion
         #region Skills
         public void TriggerSkill() => BattleManager.TriggerSkill();
+        public bool ApplyAffectToken(AffectToken token)
+        {
+            bool isEvaded = false;
+            if (token.IsEvadable)
+            {
+                var evadeChance = CalculateEvadeChance(token.SuccessRatio);
+                isEvaded = UnityEngine.Random.Range(0, 101) <= evadeChance;
+
+                if(isEvaded)                
+                    return false;                
+            }
+
+            switch (token.Action)
+            {
+                case AffectAction.HPDamage:
+                    var defense = token.Type == AffectType.Physical ? Data.Stats.physicalDefense : Data.Stats.specialDefense;
+                    var damage = CalculateFinalDamage(token.Value, defense);
+                    TakeHp(damage);
+                    break;
+                case AffectAction.MPDamage:
+                    break;
+                case AffectAction.HPRecover:
+                    HealHp(token.Value);
+                    break;
+                case AffectAction.MPRecover:
+                    break;
+                case AffectAction.HPDrain:
+                    break;
+                case AffectAction.MPDrain:
+                    break;
+            }          
+           
+            return true;
+        }
+
+        private float CalculateEvadeChance(float successRatio) => Mathf.Clamp01(0.5f * Data.Stats.speed / 100.0f + (1 - successRatio));        
+
+        private int CalculateFinalDamage(int value, int defense)
+        {
+            var defenseFactor = 100 / (100 + defense);
+            return Mathf.CeilToInt(value * defenseFactor);
+        }
+
         #endregion
         #region Animation
         private void SetAnimations()
@@ -54,10 +98,10 @@ namespace BattleUnits
 
             foreach (var state in motionMap)
             {
-                if (state.Value == null) 
-                    continue;            
+                if (state.Value == null)
+                    continue;
 
-                animatorOverride[state.Key] = state.Value;            
+                animatorOverride[state.Key] = state.Value;
             }
 
             _animator.runtimeAnimatorController = animatorOverride;
@@ -72,8 +116,8 @@ namespace BattleUnits
         {
             foreach (AnimationClip clip in animator.runtimeAnimatorController.animationClips)
             {
-                if (clip.name == animationName)            
-                    return clip;            
+                if (clip.name == animationName)
+                    return clip;
             }
             return null;
         }
@@ -87,7 +131,7 @@ namespace BattleUnits
         #region Lifecycle
         private void Awake()
         {
-            if(_data == null)
+            if (_data == null)
             {
                 Debug.LogWarning($"BattleUnitData missing");
                 return;
@@ -98,7 +142,7 @@ namespace BattleUnits
             _sr = GetComponent<SpriteRenderer>();
 
             SetAnimations();
-        
+
             shootPoint = transform.GetChild(0).transform;
 
             if (Data.Motions != null)
@@ -107,3 +151,5 @@ namespace BattleUnits
         #endregion
     }
 }
+
+

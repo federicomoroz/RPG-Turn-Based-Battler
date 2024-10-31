@@ -55,19 +55,22 @@ namespace Skills
         private IEnumerator PerformAttack(BattleUnit user, BattleUnit target)
         {
             Debug.Log($"{user} perform {this.Name}");
-            hitPosition = new Vector3(target.transform.position.x, target.transform.position.y + 1, 0);
+
+            var targetTransform = target.transform;
+
+            hitPosition = new Vector3(targetTransform.position.x, targetTransform.position.y + 1, 0);
             //view        
 
-            AnimationClip animation = user.Data.Motions.Melee1;
+            AnimationClip anim = user.Data.Motions.Melee1;
             
             if(animationVariant > 1)
-                animation = user.Data.Motions.Melee2;         
+                anim = user.Data.Motions.Melee2;         
 
-            user.ChangeAnimationState(animation);
-        
-            //evento de feedback visual y audio
-            while (!user.IsAnimationFinished(animation.name))
+            user.ChangeAnimationState(anim);        
+            
+            while (!user.IsAnimationFinished(anim.name))
                 yield return null;
+
             hitPosition = Vector3.zero;
         }
         protected int CalculateDamage(BattleUnit user, BattleUnit target)

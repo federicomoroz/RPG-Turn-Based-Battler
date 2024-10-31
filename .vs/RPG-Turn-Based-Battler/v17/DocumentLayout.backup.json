@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\skills\\skillhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\skillhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\tools\\structsandenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tools\\structsandenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|d:\\proyectos\\rpg turn-based battler\\rpg-turn-based-battler\\assets\\scripts\\managers\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\assets\\scripts\\managers\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\assets\\scripts\\tools\\structsandenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tools\\structsandenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\assets\\scripts\\skills\\skillhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\skillhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A153F1E8-492F-D1D3-D6F8-D5F3A9B849EA}|Assembly-CSharp.csproj|D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\assets\\scripts\\skills\\scriptableobjects\\meleeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,27 +43,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SkillHandler.cs",
-              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\SkillHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\SkillHandler.cs",
-              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\SkillHandler.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Skills\\SkillHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T05:23:20.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "StructsAndEnums.cs",
               "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Tools\\StructsAndEnums.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tools\\StructsAndEnums.cs",
               "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Tools\\StructsAndEnums.cs",
               "RelativeToolTip": "Assets\\Scripts\\Tools\\StructsAndEnums.cs",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAAwHUAAAAeAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T01:07:18.022Z"
+              "WhenOpened": "2024-10-31T06:00:32.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SkillHandler.cs",
+              "DocumentMoniker": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\SkillHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\SkillHandler.cs",
+              "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Skills\\SkillHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skills\\SkillHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T05:23:20.002Z"
             },
             {
               "$type": "Document",
@@ -73,10 +73,9 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\BattleManager.cs",
               "ToolTip": "D:\\Proyectos\\RPG Turn-Based Battler\\RPG-Turn-Based-Battler\\Assets\\Scripts\\Managers\\BattleManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\BattleManager.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAxwCYAAAAFAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T22:21:03.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T22:21:03.07Z"
             },
             {
               "$type": "Document",

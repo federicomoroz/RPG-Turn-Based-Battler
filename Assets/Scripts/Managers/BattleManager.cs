@@ -28,6 +28,8 @@ public partial class BattleManager : PersistentSingleton<BattleManager>
 
         Instance._currentSkill.Trigger();
     }
+    public static void AppleAffectToken() { }
+
     #endregion
     #region Helpers / Utils
     public void SortCommandTokens()
@@ -53,10 +55,40 @@ public partial class BattleManager : PersistentSingleton<BattleManager>
                     target,
                     () => Debug.Log(message)
                     ));
-
+            var affectToken = GenerateAffectToken(_currentSkill, token.User.host, token.Target.host);
+            affectToken.OnProcessCompleteCallback?.Invoke();
             _currentSkill = null;
             yield return new WaitForSeconds(_timeBetweenTurns);
         }        
+    }
+
+    private AffectToken GenerateAffectToken(SO_Skill skill, BattleUnit user, BattleUnit target)
+    {
+        System.Action debugCompleteMessage = () => Debug.Log($"Hey {target.name}! {user} sends you this AffectToken. Process it and tell when you're done");
+
+        var token = new AffectToken(
+            skill.affect.action,
+            skill.affect.type,
+            CalculateDamage(skill, user),
+            skill.invocation.isEvadable,
+            skill.invocation.accuracy,
+            skill.affect.element, 
+            debugCompleteMessage
+            );
+
+        return token;
+    }
+
+    private int CalculateDamage(SO_Skill skill, BattleUnit user)
+    {
+        var skillBasePower = skill.affect.basePower;
+        var powerVariance = skill.affect.variance * 0.01f;
+        var minBasePower = skill.affect.basePower - powerVariance;
+        var maxBasePower = skill.affect.basePower + powerVariance;
+        var finalBasePower = Mathf.CeilToInt(UnityEngine.Random.Range(minBasePower, maxBasePower));
+        var currentStrength = skill.affect.type == AffectType.Physical ? user.Data.Stats.physicalStrength : user.Data.Stats.specialStrength;
+        var damage = finalBasePower * 4 + (user.Data.Stats.level * currentStrength * (finalBasePower / 32));
+        return Mathf.RoundToInt(damage);
     }
     #endregion
 }

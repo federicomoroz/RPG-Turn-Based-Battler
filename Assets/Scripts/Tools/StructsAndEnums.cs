@@ -7,6 +7,7 @@ namespace BattleUnits
         Waiting,
         Ready,
         Performing,
+        Affecting,
         Dead,
     }
 }
@@ -119,6 +120,19 @@ namespace Skills
             OnProcessCompleteCallback = onProcessCompleteCallback;
         }
     }
+    [System.Serializable]
+    public struct Affect
+    {
+        public AffectAction action;
+        public AffectType type;
+        [Range(0, 999)]
+        public int basePower;
+        [Range(0, 100)]
+        public int variance;
+        [HideInInspector]
+        public Element element;
+    }
+
     public enum AffectAction
     {
         HPDamage,
@@ -132,19 +146,6 @@ namespace Skills
     {
         Physical,
         Special,
-    }
-    [System.Serializable]
-    public struct Affect
-    {
-        public AffectAction action;
-        public AffectType type;
-        [Range(0, 999)]
-        public int basePower;
-        [Range(0, 100)]
-        public int variance;
-        [HideInInspector]
-        public Element element;
-
     }
     public enum Side
     {
@@ -211,6 +212,9 @@ namespace Commander
         public BattleUnits.UnitBase 
             User, 
             Target;
+
+        public BattleUnits.UnitBase[] Targets;
+
         public System.Action OnCompleteCallback;
     }
 
@@ -247,4 +251,7 @@ namespace Pool
         public GameObject prefab;
         public int amount;
     }
+}
+namespace BattleSystem
+{
 }
