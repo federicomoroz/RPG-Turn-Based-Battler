@@ -55,6 +55,12 @@ namespace Sound
 }
 namespace Skills
 {
+    public enum ExecutionPoint
+    {
+        Own,
+        Target,
+        CastingStand,
+    }
     public enum MovementType
     {
         TargetedLinear,
@@ -132,7 +138,6 @@ namespace Skills
         [HideInInspector]
         public Element element;
     }
-
     public enum AffectAction
     {
         HPDamage,

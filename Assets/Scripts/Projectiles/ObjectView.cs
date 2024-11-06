@@ -32,7 +32,7 @@ public class ObjectView
 
         return this;
     }
-    public ObjectView SetCompleteCallback(params System.Action[] callbacks) => this.SetMultipleCallbacks(ref OnAnimationComplete, callbacks);
+    public ObjectView SetCompleteCallback(params System.Action[] callbacks) => this.RegisterMultipleCallbacks(ref OnAnimationComplete, callbacks);
     #endregion
     #region Commands
     /// <summary>
@@ -48,9 +48,9 @@ public class ObjectView
         var timer = PoolManager.GetObject<Timer>()
             .SetTime(GetFramerate(speed))
             .SetLoops(loop ? 0 : _data.sprites.Length + 1) 
-            .SetLoopCallback(Animate)
-            .SetStopAction(ref CancellationAction)
-            .SetCompleteCallback(Dispose)
+            .RegisterLoopCallback(Animate)
+            .RegisterStopAction(ref CancellationAction)
+            .RegisterCompleteCallback(Dispose)
             ;
 
         if(_data.sfx.cast != null) 

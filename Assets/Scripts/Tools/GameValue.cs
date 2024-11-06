@@ -14,10 +14,13 @@ public class GameValue
     public float Ratio => Value / maxValue;
     #endregion
     #region Delegates
+    public delegate void RationableChangeEvent(float value, float ratio);
+    #endregion
+    #region Events
     private event Action
         OnMax,
-        OnZero,
-        OnChange;
+        OnZero;
+    private event RationableChangeEvent OnValueChanged;
     #endregion
     #region Commands
     public GameValue Add(float value) => SetValue(this.Value + value);
@@ -33,7 +36,7 @@ public class GameValue
     {
         _currentValue = Mathf.Clamp(amount, 0, maxValue);
 
-        OnChange?.Invoke();
+        OnValueChanged?.Invoke(_currentValue, Ratio);
 
         if (_currentValue == 0)
             OnZero?.Invoke();
@@ -45,15 +48,21 @@ public class GameValue
     }
     #endregion
     #region Setup
-    public GameValue SetZeroCallback(params Action[] callbacks) => this.SetMultipleCallbacks(ref OnZero, callbacks);
-    public GameValue SetMaxCallback(params Action[] callbacks) => this.SetMultipleCallbacks(ref OnMax, callbacks);
-    public GameValue SetChangeCallback(params Action[] callbacks) => this.SetMultipleCallbacks(ref OnChange, callbacks);
+    public GameValue RegisterZeroCallback(params Action[] callbacks) 
+        => this.RegisterMultipleCallbacks(ref OnZero, callbacks);
+    public GameValue RegisterMaxCallback(params Action[] callbacks) 
+        => this.RegisterMultipleCallbacks(ref OnMax, callbacks);
+    public GameValue RegisterValueChangedCallback(RationableChangeEvent callback) 
+    {
+        OnValueChanged += callback;
+        return this;
+    }       
     #endregion
     #region Lifecycle
     protected virtual void Clean()
     {
         OnZero = null;
-        OnChange = null;
+        OnValueChanged = null;
         OnMax = null;
         maxValue = 0;
         Reset();      

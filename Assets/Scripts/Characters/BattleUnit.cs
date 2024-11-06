@@ -4,16 +4,15 @@ using UnityEngine;
 
 namespace BattleUnits
 {
-    [RequireComponent(typeof(SpriteRenderer))]
-    [RequireComponent(typeof(Animator))]
     public class BattleUnit : MonoBehaviour
     {
         #region Fields
         [SerializeField]
         private SO_UnitData _data;
-        public UnitBase unitBase { get; private set; }
-        [HideInInspector] public Transform shootPoint;
-
+        public UnitBase unitBase { get; private set; }        
+        public Transform shootPoint { get; private set; }
+        
+        private ShadowController _shadow;
         private Animator _animator;
         private SpriteRenderer _sr;
         #endregion
@@ -30,7 +29,7 @@ namespace BattleUnits
         }
         #endregion
         #region Skills
-        public void TriggerSkill() => BattleManager.TriggerSkill();
+        public void TriggerSkill() => BattleManager.TriggerSkill(this);
         public bool ApplyAffectToken(AffectToken token)
         {
             bool isEvaded = false;
@@ -39,8 +38,8 @@ namespace BattleUnits
                 var evadeChance = CalculateEvadeChance(token.SuccessRatio);
                 isEvaded = UnityEngine.Random.Range(0, 101) <= evadeChance;
 
-                if(isEvaded)                
-                    return false;                
+                if (isEvaded)
+                    return false;
             }
 
             switch (token.Action)
@@ -61,12 +60,12 @@ namespace BattleUnits
                     break;
                 case AffectAction.MPDrain:
                     break;
-            }          
-           
+            }
+
             return true;
         }
 
-        private float CalculateEvadeChance(float successRatio) => Mathf.Clamp01(0.5f * Data.Stats.speed / 100.0f + (1 - successRatio));        
+        private float CalculateEvadeChance(float successRatio) => Mathf.Clamp01(0.5f * Data.Stats.speed / 100.0f + (1 - successRatio));
 
         private int CalculateFinalDamage(int value, int defense)
         {
@@ -74,6 +73,8 @@ namespace BattleUnits
             return Mathf.CeilToInt(value * defenseFactor);
         }
 
+        #endregion
+        #region View    
         #endregion
         #region Animation
         private void SetAnimations()
@@ -137,13 +138,13 @@ namespace BattleUnits
                 return;
             }
 
-            Data = Instantiate(_data);
-            _animator = GetComponent<Animator>();
-            _sr = GetComponent<SpriteRenderer>();
+            Data = Instantiate(_data);            
+            shootPoint = transform.GetChild(0).transform;
+            _animator = transform.GetChild(1).GetComponent<Animator>();
+            _sr = transform.GetChild(1).GetComponent<SpriteRenderer>();
+            _shadow = transform.GetChild(2).GetComponent<ShadowController>();
 
             SetAnimations();
-
-            shootPoint = transform.GetChild(0).transform;
 
             if (Data.Motions != null)
                 ChangeAnimationState(Data.Motions.Idle);
@@ -151,5 +152,3 @@ namespace BattleUnits
         #endregion
     }
 }
-
-

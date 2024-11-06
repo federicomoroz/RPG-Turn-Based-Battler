@@ -27,9 +27,18 @@ namespace Skills
             var timer = PoolManager.GetObject<Timer>();
 
             timer.SetTime(GetTimeToTarget(origin, target, speed))
-                .SetCompleteCallback(onArriveCallback)
-                .SetStopAction(ref stopAction)
-                .SetChangeCallback(() => Move(user, origin, target, timer.Ratio, rotateToTarget));
+                .RegisterCompleteCallback(onArriveCallback)
+                .RegisterStopAction(ref stopAction)
+                .RegisterValueChangedCallback(
+                (timerValue, timerRatio) 
+                => Move(
+                    user, 
+                    origin, 
+                    target, 
+                    timerRatio, 
+                    rotateToTarget
+                    )
+                );
 
             return this;
         }

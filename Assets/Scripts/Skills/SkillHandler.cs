@@ -17,12 +17,12 @@ namespace Skills
         public void Execute(SO_Skill skill, BattleUnit user, BattleUnit target)
         {
             _activeSkill = skill;
-            user.StartCoroutine(skill.Execute(user, target, onCompleteCallback));
+            //user.StartCoroutine(skill.Execute(user, target.transform.position, onCompleteCallback));
         }
         public void Trigger()
         {                    
         
-            _activeSkill.Trigger();
+            //_activeSkill.Trigger();
         
             _activeSkill = null;
         }

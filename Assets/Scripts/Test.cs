@@ -12,8 +12,8 @@ public class Test : MonoBehaviour
         timer = new Timer()
             .SetTime(2)
             .SetLoops(3)
-            .SetLoopCallback(() => Debug.Log(loop))
-            .SetCompleteCallback(() => Debug.Log(end)
+            .RegisterLoopCallback(() => Debug.Log(loop))
+            .RegisterCompleteCallback(() => Debug.Log(end)
             );
     }
 

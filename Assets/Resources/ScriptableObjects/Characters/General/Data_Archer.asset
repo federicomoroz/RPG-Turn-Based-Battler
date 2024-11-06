@@ -68,7 +68,7 @@ MonoBehaviour:
     - {fileID: 778738908, guid: 98c84c07c138b4e41a3c28df5d1b8957, type: 3}
     - {fileID: -1683903471, guid: 98c84c07c138b4e41a3c28df5d1b8957, type: 3}
     - {fileID: -847198533, guid: 98c84c07c138b4e41a3c28df5d1b8957, type: 3}
-    portrait: {fileID: 21300000, guid: 266462ed756ed064f8caeac582c95fd7, type: 3}
+    portrait: {fileID: 21300000, guid: 7993053962d618f4baa7a5ca1fbeee08, type: 3}
   - spritesheet:
     - {fileID: -506945005, guid: 87594a06de12cbb4b96ec3a0d9d34461, type: 3}
     - {fileID: -1660885057, guid: 87594a06de12cbb4b96ec3a0d9d34461, type: 3}
@@ -116,5 +116,5 @@ MonoBehaviour:
     - {fileID: -596054510, guid: 87594a06de12cbb4b96ec3a0d9d34461, type: 3}
     - {fileID: -1188671354, guid: 87594a06de12cbb4b96ec3a0d9d34461, type: 3}
     - {fileID: 1353025583, guid: 87594a06de12cbb4b96ec3a0d9d34461, type: 3}
-    portrait: {fileID: 21300000, guid: 7993053962d618f4baa7a5ca1fbeee08, type: 3}
-  MovementType: {fileID: 11400000, guid: cc826409867269b4fb341bfd0c242edd, type: 2}
+    portrait: {fileID: 21300000, guid: 266462ed756ed064f8caeac582c95fd7, type: 3}
+  MovementType: {fileID: 11400000, guid: d5b0f8aba6dd1db438167cd97a6ab297, type: 2}

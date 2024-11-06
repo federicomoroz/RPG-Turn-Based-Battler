@@ -19,7 +19,7 @@ public class Timer : GameValue, IPoolable<Timer>
     public Timer SetTime(float duration)
     {
         SetMax(duration);     
-        SetMaxCallback(OnTimeOutHandler);
+        RegisterMaxCallback(OnTimeOutHandler);
         Play();
 
         return this;
@@ -34,9 +34,9 @@ public class Timer : GameValue, IPoolable<Timer>
         isLoop = true;        
         return this;
     }
-    public Timer SetLoopCallback(params Action[] callbacks) => this.SetMultipleCallbacks(ref onLoop, callbacks);
-    public Timer SetCompleteCallback(params Action[] callbacks) => this.SetMultipleCallbacks(ref onComplete, callbacks);
-    public Timer SetStopAction(ref Action action)
+    public Timer RegisterLoopCallback(params Action[] callbacks) => this.RegisterMultipleCallbacks(ref onLoop, callbacks);
+    public Timer RegisterCompleteCallback(params Action[] callbacks) => this.RegisterMultipleCallbacks(ref onComplete, callbacks);
+    public Timer RegisterStopAction(ref Action action)
     {
         action += SetOff;        
         return this;

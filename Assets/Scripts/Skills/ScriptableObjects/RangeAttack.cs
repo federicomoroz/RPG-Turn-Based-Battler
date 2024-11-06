@@ -8,50 +8,52 @@ namespace Skills
     [CreateAssetMenu(fileName = "newRangeAttackData", menuName = "Data/Skill Data/Range Attack")]
     public class RangeAttack : SO_Skill
     {
+        #region Constants
+        private const float Y_TARGETPOS_OFFSET = 1;
+        #endregion
+        #region Fields
+        private Vector3 target;
+        #endregion
         #region Delegates
         private event System.Action _onComplete;
-        #endregion                
+        #endregion
         #region Dependencies
-        private BattleUnit user, target;
         [SerializeField]
         private SO_Projectile _projectile;
         #endregion
         #region Commands
-        public override IEnumerator Execute(BattleUnit user, BattleUnit target, System.Action completeCallback)
-        {
-            
-            _onComplete = completeCallback;
-            this.user = user;
-            this.target = target;
-
-            AnimationClip animation = user.Data.Motions.Range1;
-
-            if (animationVariant > 1)
-                animation = user.Data.Motions.Range2;
-
-            user.ChangeAnimationState(animation);
-
-            while(!user.IsAnimationFinished(animation.name))
-                yield return null;
-  
-            user.ChangeAnimationState(user.Data.Motions.Idle);
-        }
-        public override void Trigger()
+        public override void Trigger(BattleUnit user)
         {
             var p = Factory.CreateProjectile(_projectile)
-                .SetCompleteCallback(ref _onComplete)           
-                .SetRotation(user.transform.localScale.x == -1 ? Quaternion.Euler(0,0,180) : Quaternion.identity);
+                .RegisterCompleteCallback(ref _onComplete)
+                .SetRotation(user.transform.localScale.x == -1 ? Quaternion.Euler(0, 0, 180) : Quaternion.identity);
 
             if (_projectile.movementData.movementType == MovementType.None)
-                p.SetPosition(target.transform.position);
+                p.SetPosition(target);
             else
                 p.SetPosition(user.shootPoint.position)
-                .SetTarget(new Vector3(target.transform.position.x, target.transform.position.y + 1, 0));
+                 .SetTarget(new Vector3(target.x, target.y + Y_TARGETPOS_OFFSET, target.y));
 
             p.Execute();
-
-            user = null;
-            target = null;
+            target = Vector3.zero;
+        }
+        #endregion
+        #region Phases
+        protected override IEnumerator PreparationPhase(BattleUnit user, Vector3 executionPosition, System.Action completeCallback)
+        {
+            _onComplete = completeCallback;
+            yield return null;
+        }
+        protected override IEnumerator ExecutionPhase(BattleUnit user, Vector3 targetPosition)
+        {
+            target = targetPosition;
+            AnimationClip anim = SelectAttackAnimation(user.Data.Motions.Range1, user.Data.Motions.Range2);
+            yield return PerformAttack(user, anim);       
+        }
+        protected override IEnumerator ResolutionPhase(BattleUnit user)
+        { 
+            _onComplete = null;
+            yield return null;
         }
         #endregion
     }

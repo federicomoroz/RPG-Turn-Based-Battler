@@ -34,7 +34,7 @@ namespace Projectiles
                 case DestructionCondition.OnTime:
                     var timer = PoolManager.GetObject<Timer>()
                         .SetTime(_data.lifeTime)
-                        .SetCompleteCallback(
+                        .RegisterCompleteCallback(
                         () =>
                         {
                             _view.Stop();
@@ -77,7 +77,7 @@ namespace Projectiles
 
             return this;
         }
-        public Projectile SetCompleteCallback(ref System.Action callback)
+        public Projectile RegisterCompleteCallback(ref System.Action callback)
         { 
             onComplete = callback;
             return this;        
@@ -117,7 +117,7 @@ namespace Projectiles
             {
                 var projectile = Factory.CreateProjectile(impact)
                     .SetPosition(transform.position)
-                    .SetCompleteCallback(ref onComplete);
+                    .RegisterCompleteCallback(ref onComplete);
 
                 onComplete = null;     
                 projectile.Execute();        

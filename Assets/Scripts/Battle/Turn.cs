@@ -16,8 +16,9 @@ namespace BattleSystem
         public IEnumerator Execute()
         {
             // Ejecutar la skill
-            yield return skill.Execute(user, targets[0], () => UnityEngine.Debug.Log("Skill complete"));
+            //yield return skill.Execute(user, targets[0].transform.position, () => UnityEngine.Debug.Log("Skill complete"));
             // Obtener lista de targets y affectToken
+            yield return null;
             
         }
 

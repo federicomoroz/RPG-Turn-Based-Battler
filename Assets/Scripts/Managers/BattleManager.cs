@@ -21,15 +21,14 @@ public partial class BattleManager : PersistentSingleton<BattleManager>
     #endregion
     #region Commands
     public static void ExecuteTokens() => Instance.StartCoroutine(Instance.Perform()); 
-    public static void TriggerSkill()
+    public static void TriggerSkill(BattleUnit user)
     {
         if (Instance._currentSkill == null)
             return;
 
-        Instance._currentSkill.Trigger();
+        Instance._currentSkill.Trigger(user);
     }
     public static void AppleAffectToken() { }
-
     #endregion
     #region Helpers / Utils
     public void SortCommandTokens()
@@ -52,16 +51,17 @@ public partial class BattleManager : PersistentSingleton<BattleManager>
             yield return StartCoroutine(
                 token.Skill.Execute(
                     user,
-                    target,
+                    target.transform.position,
+                    target.transform.position,
                     () => Debug.Log(message)
                     ));
+
             var affectToken = GenerateAffectToken(_currentSkill, token.User.host, token.Target.host);
             affectToken.OnProcessCompleteCallback?.Invoke();
             _currentSkill = null;
             yield return new WaitForSeconds(_timeBetweenTurns);
         }        
     }
-
     private AffectToken GenerateAffectToken(SO_Skill skill, BattleUnit user, BattleUnit target)
     {
         System.Action debugCompleteMessage = () => Debug.Log($"Hey {target.name}! {user} sends you this AffectToken. Process it and tell when you're done");
