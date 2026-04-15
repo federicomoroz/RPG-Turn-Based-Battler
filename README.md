@@ -14,6 +14,9 @@ A modular, data-driven turn-based battle system built in Unity (URP, 2D). Design
 - [Projectile System](#projectile-system)
 - [Controller System](#controller-system)
 - [Object Pooling](#object-pooling)
+- [GameValue](#gamevalue)
+- [Timer](#timer)
+- [Generic Pool System](#generic-pool-system)
 - [Design Patterns](#design-patterns)
 - [Project Setup](#project-setup)
 
@@ -442,6 +445,256 @@ Usage examples:
 
     timer.SetTime(2f).OnComplete(() => NextTurn()).Start();
     // timer returns itself to the pool after firing
+```
+
+---
+
+## GameValue
+
+`GameValue` is a self-contained bounded number. Every stat that has a min, a max, and needs to notify the rest of the system when it changes (HP, MP, timer progress) is a `GameValue`.
+
+```
+                    ┌─────────────────────────────────────────────┐
+                    │               GameValue                     │
+                    │                                             │
+  maxValue ───────► │  ████████████████████░░░░░░░░  75 / 100   │
+                    │                                             │
+                    │  _currentValue  (clamped 0 … maxValue)     │
+                    │  Ratio = currentValue / maxValue  → 0…1    │
+                    └─────────────────┬───────────────────────────┘
+                                      │
+               ┌──────────────────────┼──────────────────────┐
+               │ every SetValue()     │                       │
+               ▼                      ▼                       ▼
+        OnValueChanged           OnZero fires           OnMax fires
+     (value, ratio)              when HP = 0            when HP = max
+           │                         │                       │
+      BarDisplay                EnterDeadState()        full-heal VFX
+      updates bar              (registered in Setup)    (future hook)
+
+API — all methods return `this` for fluent chaining:
+  hp.Add(30)                  → heals 30
+  hp.Subtract(45)             → takes 45 damage (clamped at 0)
+  hp.IncreaseRatio(0.1f)      → heals 10% of current value
+  hp.SetValue(100)            → hard set
+  hp.Ratio                    → 0.0 … 1.0  (drives health bar fill)
+
+  hp.RegisterZeroCallback(EnterDeadState)
+  hp.RegisterMaxCallback(PlayFullHealEffect)
+  hp.RegisterValueChangedCallback((val, ratio) => bar.SetFill(ratio))
+```
+
+**Why a class and not a struct?**
+Callbacks survive across frames without boxing. Multiple systems (UI, battle logic, audio) register independently on the same instance — no central coordinator needed.
+
+---
+
+## Timer
+
+`Timer` **is a** `GameValue`. Its `_currentValue` starts at 0 and ticks up to `maxValue` (the duration). When it reaches `maxValue`, `OnMax` fires — the timer reuses the same boundary event that `GameValue` already provides.
+
+```
+  GameValue
+  └── Timer  (also IPoolable<Timer>)
+
+  TIME ──────────────────────────────────────────────────►
+  0                    duration                          MAX
+  │░░░░░░░░░░░░░░░░░░░░│████████████████████████████████│
+  │◄── Tick() each frame: Add(Time.deltaTime) ─────────►│
+                        │                               │
+                    OnValueChanged                    OnMax
+                  (optional progress             OnTimeOutHandler()
+                   callback)                          │
+                                               ┌──────┴───────┐
+                                               │              │
+                                           isLoop?          no loop
+                                               │              │
+                                        ┌──────┴──────┐       │
+                                    has loops     infinite     │
+                                    remaining?    loop         │
+                                        │              │       │
+                                    _currentLoop++  onLoop  onComplete
+                                    Reset()         Reset()    │
+                                                           SetOff()
+                                                         (→ pool)
+
+Fluent API:
+  PoolManager.GetObject<Timer>()     // pull from pool (zero allocation)
+    .SetTime(2.0f)                   // sets maxValue = 2, starts ticking
+    .SetLoops(3)                     // repeat 3 times before completing
+    .RegisterLoopCallback(OnEachLoop)
+    .RegisterCompleteCallback(OnDone);
+
+  // stop early:
+  timer.SetOff()   → enqueued into TimerManager._inactiveTimers
+                   → Dispose() called next frame → pool returns it
+
+TimerManager (PersistentSingleton) — tick distribution:
+
+  ┌──────────────────────────────────────────────────────┐
+  │  Update() every frame                                │
+  │                                                      │
+  │  _activeTimers ──► timer.Tick()  (for each)          │
+  │                                                      │
+  │  _inactiveTimers ──► Remove + Dispose()  (deferred)  │
+  │  _pendingTimers  ──► Add to _activeTimers (deferred) │
+  └──────────────────────────────────────────────────────┘
+
+  Deferred queues prevent ConcurrentModificationException:
+  a timer completing inside Tick() enqueues itself into
+  _inactiveTimers and is safely removed after the loop ends.
+```
+
+**Why inherit `GameValue`?**
+A timer IS a value progressing from 0 to max with boundary callbacks. Inheriting means `Timer` gets `Add()`, `Ratio`, `OnZero`, `OnMax`, and `OnValueChanged` for free. The only new concept is looping and pool lifecycle.
+
+---
+
+## Generic Pool System
+
+The pool system has two layers: a **type hierarchy** that defines behaviour, and a **`PoolManager`** that owns all pools and auto-discovers what to pool at startup.
+
+### Pool Type Hierarchy
+
+```
+                      IPoolable<T>
+                  ┌───────────────────┐
+                  │  Initialize() → T  │  called once on creation
+                  │  Dispose()         │  called to return to pool
+                  └───────────────────┘
+                           ▲
+          ┌────────────────┼─────────────────┐
+          │                │                 │
+       Timer           Projectile          SFX
+      (ClassPool)    (PrefabPool)       (PrefabPool)
+       Impact           (etc.)
+      (PrefabPool)
+
+                         IPool<T>
+                  ┌───────────────────┐
+                  │  Pull() → T        │
+                  │  Push(T)           │
+                  └───────────────────┘
+                           ▲
+                      Pool<T>  (abstract)
+                  Stack<T> _pooledObjects
+                  Fill(capacity) on Initialize()
+                           │
+               ┌───────────┼────────────┐
+               │           │            │
+        ObjectPool<T>  ClassPool<T>  PrefabPool<T>
+        MonoBehaviour   plain C#      MonoBehaviour
+        SetActive(true)  new T()      Instantiate(prefab)
+        SetActive(false) .Initialize()
+        on Pull/Push
+```
+
+### The Three Pool Flavours
+
+```
+┌──────────────────────────────────────────────────────────────────┐
+│  ClassPool<T>                                                    │
+│  Constraint: T : IPoolable<T>, new()                            │
+│                                                                  │
+│  Use for: plain C# objects with no GameObject (Timer)           │
+│                                                                  │
+│  Fill():   new T().Initialize()  → push to Stack                │
+│  Pull():   pop from Stack                                        │
+│  Push(t):  push back to Stack                                    │
+│                                                                  │
+│  ┌──┐ ┌──┐ ┌──┐ ┌──┐ ┌──┐     capacity = 5                     │
+│  │T │ │T │ │T │ │T │ │T │  ←  all pre-created at startup        │
+│  └──┘ └──┘ └──┘ └──┘ └──┘                                       │
+└──────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────┐
+│  ObjectPool<T>                                                   │
+│  Constraint: T : MonoBehaviour, IPoolable<T>                    │
+│                                                                  │
+│  Use for: auto-generated GameObjects (no designer-made prefab)   │
+│                                                                  │
+│  Fill():   new GameObject().AddComponent<T>()                   │
+│  Pull():   SetActive(true)   → visible in scene                 │
+│  Push(t):  SetActive(false)  → hidden, waiting in pool          │
+│                                                                  │
+│  Scene hierarchy (optional _useObjectsContainer):               │
+│  Pool Objects/                                                   │
+│    o_Timer  (inactive)                                           │
+│    o_Timer  (inactive)                                           │
+│    o_Timer  ← currently active (pulled)                         │
+└──────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────┐
+│  PrefabPool<T>  : ObjectPool<T>                                  │
+│  Constraint: T : MonoBehaviour, IPoolable<T>, IPoolablePrefab   │
+│                                                                  │
+│  Use for: designer-built prefabs (Projectile, SFX, Impact)      │
+│  Difference: Fill() uses Instantiate(_prefab) instead of        │
+│              new GameObject().AddComponent<T>()                  │
+│                                                                  │
+│  Created manually via PoolManager.CreatePrefabPool<T>(prefab, n)│
+│  (FXManager and SoundManager call this at startup)              │
+│                                                                  │
+│  Multiple pools of the same type T, keyed by prefab name:       │
+│  Projectile pools: { "FireBall" → PrefabPool,                   │
+│                      "Arrow"   → PrefabPool,                    │
+│                      "IceShard"→ PrefabPool }                   │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+### PoolManager — Auto-Discovery and Dual Registry
+
+```
+PoolManager  (PersistentSingleton)
+│
+│  Awake() → Initialize()
+│       │
+│       ├── (optional) create "Pool Objects" container in hierarchy
+│       │
+│       └── CreatePools()
+│               │
+│               │  Reflection scan across all assemblies:
+│               │  "find every non-abstract class that implements IPoolable<T>"
+│               │  (excludes IPoolablePrefab — those are created on demand)
+│               │
+│               ├── MonoBehaviour subtype? → ObjectPool<T>
+│               └── plain class?           → ClassPool<T>
+│
+│  Two internal registries:
+│
+│  _pools : Dictionary<Type, Pool>
+│  ┌────────────────┬────────────────────────┐
+│  │ typeof(Timer)  │ ClassPool<Timer>        │
+│  │ typeof(SFX)    │ ObjectPool<SFX>         │ ← auto-discovered
+│  │ typeof(Impact) │ ObjectPool<Impact>      │
+│  └────────────────┴────────────────────────┘
+│
+│  _prefabPools : Dictionary<Type, Dictionary<string, Pool>>
+│  ┌──────────────────┬──────────────────────────────────────┐
+│  │ typeof(Projectile│ { "FireBall" → PrefabPool,           │
+│  │                  │   "Arrow"   → PrefabPool }           │ ← manual
+│  │ typeof(Impact)   │ { "Spark"   → PrefabPool,           │
+│  │                  │   "Slash"   → PrefabPool }           │
+│  └──────────────────┴──────────────────────────────────────┘
+
+Static API (no Instance reference needed at call sites):
+  PoolManager.GetObject<Timer>()                    → ClassPool pull
+  PoolManager.ReturnObject<Timer>(t)               → ClassPool push
+
+  PoolManager.GetPrefabObject<Projectile>("Arrow") → PrefabPool pull
+  PoolManager.ReturnPrefabObject<Projectile>(p)    → PrefabPool push
+
+  PoolManager.CreatePrefabPool<Impact>(prefab, 10) → register new pool
+
+Object lifetime — Projectile example:
+  ┌────────┐  GetObject   ┌───────────┐  Execute()  ┌──────────┐
+  │  Pool  │ ──────────► │ Projectile│ ──────────► │  Scene   │
+  │(stack) │             │ (active)  │             │(flying)  │
+  └────────┘             └─────┬─────┘             └────┬─────┘
+      ▲                        │                        │
+      │                        │ on arrival/time/anim   │
+      └────────────────────────┘ Dispose() ─────────────┘
+         ReturnObject push          (onComplete fires first)
 ```
 
 ---
